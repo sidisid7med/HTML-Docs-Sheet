@@ -9,6 +9,8 @@ I wrote this docs to help in future and gude others.
 
 It's a simple docs and easy content contains what are mostly important and avoiding deprecated _**API's**_, but I will probably still work on it to improve the content well.
 
+~~https://sidisid7med.github.io/HTML-Docs-Sheet/~~
+
 # Reference
 
 * The metadata element
