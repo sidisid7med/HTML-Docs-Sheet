@@ -1,0 +1,1835 @@
+<!-- doctype tage represent which version of 'HTML' you want to use. -->
+<!-- doctype represent page to use 'Standard Compliance Mode' ,
+without doctype page represent as 'Quirks Mode' -->
+<!DOCTYPE html>
+
+<!-- html tag lang attr define lang of element -->
+<html lang="en">
+
+<head>
+  <!-- meta tag represents 'metadata' that cannot be represented
+      by other HTML meta-related elements like 
+      <base>, <link>, <script>, <style> or <title>. -->
+  <!-- meta 
+  attr[
+  charset['UTF-8'], 
+  name['description'],
+  'viewport', 
+  'keywords', 
+  'author', 
+  'color-scheme',
+  'generator'
+  'application-name', 
+    ], 
+  http-equiv['content-type', 'refresh','default-style', 'content-secuirty-policy']
+  content['text'], 
+  itemprop[]
+  ]  -->
+
+  <meta charset="UTF-8">
+  <!-- description of page that token by search engines to dicover page content. -->
+  <meta name="description"
+    content="HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).">
+  <meta name="viewport" content="width=device-width, initial-scale=2.0">
+  <!-- keywords of page that token by search engines to dicover page title keywords. -->
+  <meta name="keywords" content="HTML, CSS, JS, Markup, HyperText">
+  <!-- author of page that token by search engines to allow how wrote content of page -->
+  <meta name="author" content="Sidi Sid'Ahmed">
+  <!-- colot-scheme allow website to detect your current theme color,
+    then choose one color on content meta make website use that color. -->
+  <!-- Webpage color scheme, its turn web to colors scheme dark, light -->
+  <meta name="color-scheme" content="dark light">
+  <!-- copyright give serach engine to allow your content copyright.  -->
+  <meta name="copyright" content="Your Company Or Brand Name" />
+  <!--  obots give to controle search spider for what you want, like you can choose the pages you to as indexing. -->
+  <meta name="robots" content="index, follow" />
+  <!-- revised the time you revise page, last time content be update.  -->
+  <meta name="revised" content="Tuesday, July 20th, 2019, 10:15 am" />
+  <!-- redirect page after monment to other page. -->
+  <!-- http-equiv difines a pragma directive, the attribute is named http-equiv(alent) 
+  because all the allowed values are names of  -->
+
+  <!-- <meta http-equiv = "refresh" content = "5; url = http://www.BookStore.com" /> -->
+  <meta http-equiv="Content-Type" content="text/html; charset = UTF-8" />
+  <meta http-equiv="cookie" content="userid = xyz; expires = Wednesday, 08-Aug-21 23:59:59 GMT;" />
+
+  <title>HTML Docs Sheet</title>
+  <!-- link tag specifies relationships between the current document
+  and an external resource -->
+  <!-- link attr[
+  rel[
+  'stylesheet'
+  'icon',
+  'author',
+  'help',
+  'alternate',
+  'license',
+  'pingback',
+  'preconnect',
+  'prefetch',
+  'preload',
+  'prerender',
+  'search',
+  'next',
+  'prev',
+  'dns-prefetch',
+  ], 
+  href[URL], 
+  type, 
+  hreflang[language_code], 
+  referrerpolicy[
+  'no-referrer',
+  'no-referrer-when-downgrade',
+  'origin',
+  'origin-when-cross-origin', 
+  'unsafe-url'
+  ], 
+  media[media_query], 
+  type, 
+  title, 
+  croosorigin['anonymous', 'use-credentials'], 
+  sizes, 
+  title
+  ] -->
+  <link rel="stylesheet" href="index.css" title="css index">
+  <link rel="icon" href="embed/html.svg">
+  <!-- <link rel="author" href="author.md"> -->
+  <!-- base tag specifies the base URL and/or target for all relative URLs in a document,
+  The <base> must have either an href or a target attribute present, or both,
+  There can only be one single <base> element in a document, and it must be inside the <head> element/
+-->
+  <!-- base attr[href[URL], target['_blank','_parent','_self','_top']] -->
+  <!-- <base href="https://www.google.com/" target="_blank"> -->
+  <!-- style attr[
+  media[all, aural, braille, handheld, projection, print, screen, tty, tv], 
+  type[text/css]
+  ] -->
+  <style media="print">
+    h1 {
+      font-size: 20em;
+    }
+  </style>
+  <!-- script attr[
+  async[Async],
+  crossorigin[anonymos, use-credentials],
+  defer[defer],
+  integrity[filehash],
+  nomodule[ture, false],
+  referrepolicy[
+    no-referre, 
+    no-referre-when-downgrade, 
+    origin, 
+    origin-when-cross-origin, 
+    same-origin, 
+    strcit-origin, 
+    strict-origin-when-cross-origin,
+    unsafe-url  
+  ],
+  src[URL],
+  type[scripttype]
+  ] -->
+  <script></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- HTML Docs Sheet -->
+    <h3 class="heading">HTML Docs Sheet</h3>
+    <hr>
+    <div class="content">
+      <div class="docs"></div>
+      <strong>For Example</strong>
+      <div class="for-example code"></div>
+    </div>
+    <!-- <meta>: The metadata element -->
+    <h3 class="heading">The metadata element</h3>
+    <hr>
+    <div class="content">
+      <div class="docs"></div>
+      <strong>For Example</strong>
+      <div class="for-example code"></div>
+    </div>
+    <!-- <link>: The External Resource Link element -->
+    <h3 class="heading">The External Resource Link element</h3>
+    <hr>
+    <div class="content">
+      <div class="docs"></div>
+      <strong>For Example</strong>
+      <div class="for-example code"></div>
+    </div>
+    <!-- <base>: The Document Base URL element -->
+    <h3 class="heading">The Document Base URL element</h3>
+    <hr>
+    <div class="content">
+      <div class="docs"></div>
+      <strong>For Example</strong>
+      <div class="for-example">
+        <a href="add">Google Add</a>
+        <a href="contact">Google Contact</a>
+      </div>
+    </div>
+    <!-- <style>: The Style Information element -->
+    <h3 class="heading">The Style Information element</h3>
+    <hr>
+    <div class="content">
+      <div class="docs"></div>
+      <strong>For Example</strong>
+      <div class="for-example code"></div>
+    </div>
+    <!-- <script>: The Script element -->
+    <h3 class="heading">The Script element</h3>
+    <hr>
+    <div class="content">
+      <div class="docs"></div>
+      <strong>For Example</strong>
+      <div class="for-example code"></div>
+    </div>
+    <!-- Heading <h1>, <h2>, <h3>, <h4>, <h5>, <h6>. -->
+    <h3 class="heading">The HTML Section Heading elements</h3>
+    <hr>
+    <div class="content">
+      <div class="docs">
+        <p>Heading <code class="tage">&lt;h1&gt;</code>, <code class="tage">&lt;h2&gt;</code>, <code
+            class="tage">&lt;h3&gt;</code>,
+          <code class="tage">&lt;h4&gt;</code>, <code class="tage">&lt;h5&gt;</code>, <code
+            class="tage">&lt;h6&gt;</code>
+        </p>
+        <p>All heading title come with <u>user agent</u> stylesheet, Browser custome stylesheets.</p>
+        <strong>Attributes</strong>
+        <p>These elements only include the <u>global attributes</u>.</p>
+        <div class="code">
+          This <span><code class="tage">align</code></span> attribute is obesolete; don't use it.
+        </div>
+        <strong>Nesting</strong>
+        <p>Headings may be nested as subsections to reflect the organization of the content of the page. Most screen
+          readers can also generate an ordered list of all the headings on a page, which can help a person quickly
+          determine the
+          hierarchy of the content:</p>
+        <strong>Note</strong>
+        <ul>
+          <li>Heading information can be used by user agents to construct a table of contents for document
+            automatically.
+          </li>
+          <li>Avoid using heading elements to resize text, Instead, use the <u>CSS</u> <small>font-size</small>
+            property.
+          </li>
+          <li>Use only one <code class="tage">&lt;h1&gt;</code> per page or view. It should concisely describe the
+            overall purpose of
+            the content.</li>
+          <li>Using more than one <code class="tage">&lt;h1&gt;</code> will not result in an error, but is not
+            considered a best
+            practice, Using only one <code class="tage">&lt;h1&gt;</code> is beneficial for screenreader users, and
+            <u>SEO</u>.
+          </li>
+          <li>While HTML5 allows a <code class="tage">&lt;h1&gt;</code> per <u>sectioning element</u>. it is not
+            considered best
+            practice, and may subvert the expectations of how screen reader users navigate.</li>
+        </ul>
+        <strong>Navigation</strong>
+        <p>A common navigation technique for users of screen reading software is jumping from heading to heading to
+          quickly determine the content of the page, Beacuse of this, its important to not skip one or more heading
+          levels, Doing so may create confusion, as the person navigating this way may be left wondering where the
+          missing
+          heading is.</p>
+        <p>The following code shows all the heading levels, in use.</p>
+        <p>When heading are nested, heading levels may be "skipped" when closing a subsection.</p>
+      </div>
+      <strong>For Example</strong>
+      <div class="for-example">
+        <h1>Beetles</h1>
+        <h2>Etymology</h2>
+        <h3>Late Paleozoic</h3>
+        <h4>Prothorax</h4>
+        <h5>Bold Title</h5>
+        <h6>Tiny Title</h6>
+        <p>Avoid skipping heading levels: always start from <code class="tage">&lt;h1&gt;</code>, followed by <code
+            class="tage">&lt;h2&gt</code>;
+          and so on.</p>
+        <div class="code">
+          <p><code class="tage">&lt;h1&gt;</code>Heading level 1<code class="tage">&lt;/h1&gt;</code></p>
+          <p><code class="tage">&lt;h2&gt;</code>Heading level 2<code class="tage">&lt;/h2&gt;</code></p>
+          <p><code class="tage">&lt;h3&gt;</code>Heading level 3<code class="tage">&lt;/h3&gt;</code></p>
+          <p><code class="tage">&lt;h4&gt;</code>Heading level 4<code class="tage">&lt;/h4&gt;</code></p>
+          <p><code class="tage">&lt;h5&gt;</code>Heading level 5<code class="tage">&lt;/h5&gt;</code></p>
+          <p><code class="tage">&lt;h6&gt;</code>Heading level 6<code class="tage">&lt;/h6&gt;</code></p>
+        </div>
+        <strong>Don't</strong>
+        <div class="code">
+          <p><code class="tage">&lt;h1&gt;</code>Heading level 1<code class="tage">&lt;/h1&gt;</code></p>
+          <p><code class="tage">&lt;h3&gt;</code>Heading level 3<code class="tage">&lt;/h3&gt;</code></p>
+          <p><code class="tage">&lt;h4&gt;</code>Heading level 4<code class="tage">&lt;/h4&gt;</code></p>
+        </div>
+        <strong>Do</strong>
+        <div class="code">
+          <p><code class="tage">&lt;h1&gt;</code>Heading level 1<code class="tage">&lt;/h1&gt;</code></p>
+          <p><code class="tage">&lt;h2&gt;</code>Heading level 2<code class="tage">&lt;/h2&gt;</code></p>
+          <p><code class="tage">&lt;h3&gt;</code>Heading level 3<code class="tage">&lt;/h3&gt;</code></p>
+        </div>
+      </div>
+    </div>
+    <!-- Paragraphs -->
+    <h3 class="heading">Paragraphs</h3>
+    <hr>
+    <div class="content">
+      <div class="docs">
+        <dl>
+          <dt><code class="tage">&lt;p&gt;</code> : The Paragraph element</dt>
+          <dd>The Paragraph element represent a paragraph, paragraph are usually represented in visual media
+            as blocks of text separator form adjacent blocks by blank lines and/or first-line indentation, but HTML
+            paragraphs can be any structual grouping of related content. such as images or form fields,
+            its has no element attribute.</dd>
+          <dd>All paragraphs need tage to as dispaly block text</dd>
+          <dd>By default, browsers separate paragraphs with a single blank line. Alternate separation methods, such as
+            first-line
+            indentation, can be achieved with CSS:</dd>
+          <dd>Breaking up content into paragraphs helps make a page more accessible. Screen-readers and other
+            assistive
+            technology provide shortcuts to let their users skip to the next or previous paragraph, letting them skim
+            content
+            like how white space lets visual users skip around.</dd>
+          <dd>Using empty <code class="tage">&lt;p&gt;</code> elements to add space between paragraphs is problematic
+            for people
+            who
+            navigate with
+            screen-reading
+            technology. Screen readers may announce the paragraph's presence, but not any content contained within it
+            —
+            because there is none. This can confuse and frustrate the person using the screen reader.</dd>
+        </dl>
+      </div>
+      <strong>For Example</strong>
+      <div class="for-example code"></div>
+    </div>
+    <!-- Global Attributes -->
+    <h3 class="heading">Global Attribute</h3>
+    <hr>
+    <div class="content">
+      <div class="docs">
+        <p>Global attributes are attributes common to all HTML elements they can be usesd on all elements,
+          though they may have no effect on some elements.</p>
+        <p>global attributes may be specified on all HTML element even not specified in the standard mode,
+          that means that non-standard elements must still permit these attributes, even though using those
+          element means that the document is no logner HTML5-compliant for example HTML5-compliant browser
+          hide content marked as <span>&lt;foo hidden&gt;....&lt;/foo&gt;</span> is not a valid HTML element. </p>
+        <p>In addition to the basic HTML global attributes also exist:</p>
+
+        <!-- * In addition to the basic HTML global attributes also exist :
+        - the multi 'aria-*' attribute used for improving accessibility.
+        - the event handler attributes: [ onabort, onautocomplete, onautocompleteerror, onblur, 
+        oncancel, oncanplay, oncanplaythrough, onchange, onclick, onclose, oncontextmenu, 
+        oncuechange, ondblclick, ondrag, ondragend, ondragenter, ondragexit, ondragleave, 
+        ondragover, ondragstart, ondrop, ondurationchange, onemptied, onended, onerror, 
+        onfocus, oninput, oninvalid, onkeydown, onkeypress, onkeyup, onload, 
+        onloadeddata, onloadedmetadata, onloadstart, onmousedown, onmouseenter, 
+        onmouseleave, onmousemove, onmouseout, onmouseover, onmouseup, onmousewheel, 
+        onpause, onplay, onplaying, onprogress, onratechange, onreset, onresize, 
+        onscroll, onseeked, onseeking, onselect, onshow, onsort, onstalled, 
+        onsubmit, onsuspend, ontimeupdate, ontoggle, onvolumechange, onwaiting ]
+
+        * List of global attribute:
+        - accesskey: Provides a hint for generating a keyboard shortcut for the current element,
+        this attribute consists of space-separated list of characters, the browser should
+        use the first on that exists on the computer keyboard layout.
+        - autocapitalize: Controle whether and how text input is automatically capitalized as it is
+        entered/edited by the user. it can have the following value:
+        - 'off' or 'none', no autocapitalization is applied (all letters defau;t to lowercase)
+        - 'on'  or 'sentences' the first letter of each sentence defaults to capital letter
+        all other letters to lowercase.
+        - 'words' the first letter of each sentence default to a capital letter
+        all other letters default to lowercase.
+        - 'chcaracters' all letters should default to uppercase.
+        - class: A space-separated list of the classes of the element Classes allows CSS and JavaScript to
+        Select and access specific element via the 'class selectors'  ot functions like the methods  
+        - id: Defines a unique idenfier (ID) which must be unique in the whole document, its purpose is to 
+        identify the element when linking (using a fragment identifier), scripting or styling (with CSS).
+        - hidden: A boolean attribute indicates that element is not yet, or is no longer relevant for example,
+        it can be used to hide elements of page that can't be used until the login process has been 
+        completed, the browser won't render such elements. this attribute must not be used to hide content
+        that could legitimately be shown.
+        - is: Allows you to specify that a standard HTML element should behave like a registered custom built-in element.
+        - style: containe CSS styling decations to be applied to the element, Note that it is recommended 
+        for styles to be defined in a separate file or files, Thtis attriube and the <style> element
+        have mainly the purpose of allowing for quick styling for example for testing purposes. 
+        - data-*: Forms a class of attribute, called custom data attribute, that allow proprietary
+        information to be exchanged between the HTML and its DOM representation that
+        may be used by script, all such custom data are available via the HTMLElement
+        interface of element the attribute is set on The HTMLOrForeginElement/dataset
+        property give access to them
+        - title: Contains a text representing advisory inforamtion related to the element
+        it belongs to, Such information can typically, but not necessaruilly,
+        be presented to the user as a tooltip.
+        - dir: An enumerated attribute indicating the directionality of the element's text. it
+        can have the following values:
+        - 'ltr' which means left to right and is to be used for languages that are wirtten
+        from the left to the right (like English)
+        -  'rtl' which means right to left and is to be used for languages that are wirtten
+        from the right to the left (like Arabic)
+        -  'auto' which lets the user agent decide, its uses a basic algorithm as it parses 
+        the characters inside the element until it finds a character with a strong directionality
+        then it applies that directionality. to the element 
+        - nonce: A cryptographic nonce ('number used once') which can be used by 'Content Secuity Ploicy' 
+        to determine whether or not a give fetch will be allowed to proceed.
+        - part: A space-separated list of the part names of the element, part names allows CSS to
+        select and style specific elements in a shadow tree via the ::part pseudo-element
+        - contextmenu: ("This deprecated API should no longer be used, but will probably still work.")
+        The id of a <menu> to use as the contextual menu for this element.
+        - contenteditable: 
+        - translate:
+        - spellcheck:
+        - slot:
+        - lang:
+        - draggable:
+        - enterkeyhint:
+        - exportparts:
+        - tabindex:
+        - inputmode:
+        - itemid: The unique, global identifier of an item
+        - itemprop:
+        - itemref:
+        - itemscope:
+        - itemtype:
+        -->
+
+      </div>
+      <strong>For Example</strong>
+      <div class="for-example code"></div>
+    </div>
+    <!-- Formating Elements -->
+    <h3 class="heading">Formating Elements</h3>
+    <hr>
+    <div class="content">
+      <div class="docs">
+        <!-- Tags <b>, <strong>, <i>, <em>, <mark>, <u>, <small>, <del>, <ins>, <sup>, <sub> -->
+        <p>Tags <code class="tage">&lt;b&gt;</code>, <code class="tage">&lt;strong&gt;</code>, <code
+            class="tage">&lt;i&gt;</code>,
+          <code class="tage">&lt;em&gt;</code>,
+          <code class="tage">&lt;mark&gt;</code>, <code class="tage"> &lt;u&gt;</code>, <code
+            class="tage">&lt;small&gt;</code>,
+          <code class="tage">&lt;del&gt;</code>,
+          <code class="tage">&lt;ins&gt;</code>, <code class="tage">&lt;sup&gt;</code>, <code
+            class="tage">&lt;sub&gt;</code>,<code class="tage">&lt;u&gt;</code>
+        </p>
+
+        <!-- <b> & <strong> -->
+        <dl>
+          <dt><code class="tage">&lt;b&gt;</code></dt>
+          <dd>The bring attention to element is used to draw the render's attention to the element's contents,
+            which
+            are not otherwise granted special importance. this was formerly known as Boldface element, and most
+            browsers still draw the text in boldface, however you should nor use <code class="tage">&lt;b&gt;</code> for
+            styling
+            text instead you should use CSS font-weight property to create boldface text or the
+            <code class="tage">&lt;strong&gt;</code>
+            element indicate that text is of special importance.
+          </dd>
+          <dt><code class="tage">&lt;strong&gt;</code></dt>
+          <dd>The strong importance element indicates that its contents have strong
+            importance, seriousness or
+            ugency, browser typicalyl render contents in bold type.</dd>
+        </dl>
+
+        <p><code class="tage">&lt;b&gt;</code> format text as <b>Bold</b> text.</p>
+
+        <p><code class="tage">&lt;strong&gt;</code> format text as <strong>Strong | Important</strong> text.</p>
+
+        <!-- <i> & <em> -->
+        <h4><code class="tage">&lt;i&gt;</code> Idiomatic & <code class="tage">&lt;em&gt;</code> Emphasis Text</h4>
+        <p><code class="tage">&lt;i&gt;</code> : the idiomatic text element represents a range of text that is set off
+          from the
+          normal text for some
+          reason, such as idomatic text taxonomical designations, among others, Historically.</p>
+        <p><code class="tage">&lt;em&gt;</code> : the emphasis element, makes text that has stress emphasis, element can
+          be
+          nested,
+          with each level of
+          nesting indcating a greater degree of emphasis </p>
+
+        <p><code class="tage">&lt;i&gt;</code> format text as <i>Italic</i> text.</p>
+        <p><code class="tage">&lt;em&gt;</code> format text as <em>Emphasized</em> text.</p>
+
+        <!-- <mark> & <u> -->
+        <h4><code class="tage">&lt;mark&gt;</code> highlighted & <code class="tage">&lt;u&gt;</code> Underline Text</h4>
+        <p><code class="tage">&lt;mark&gt;</code> : The Mark Text element represent text which is marked or highlighted
+          for
+          reference
+          or notation
+          purpos, due to the marked passage's relevance or importance in the enclosing context.</p>
+        <p><code class="tage">&lt;u&gt;</code> : The Unarticulated Annotation (Underline) element represent a span of
+          inline
+          text
+          which should be
+          rendered in a way that indicates that. it has a non-textual annotation, this is rendered by default as a
+          simple
+          solid underline, but may be altered using CSS </p>
+
+        <p><code class="tage">&lt;mark&gt;</code>format text as <mark>highlighted</mark> text.</p>
+        <p><code class="tage">&lt;u&gt;</code> format text as <u>Underline</u> text.</p>
+
+        <!-- <sup> & <sub> & <small> Text -->
+        <h4><code class="tage">&lt;sup&gt;</code> & <code class="tage">&lt;sub&gt;</code> & <code
+            class="tage">&lt;small&gt;</code> Text</h4>
+        <p><code class="tage">&lt;sup&gt;</code> & <code class="tage">&lt;sub&gt;</code> : The HTML Superscript &
+          Subscript specifies inline
+          text
+          which is to be displayed as
+          superscript or subscript for solely typographical reasons.</p>
+        <p><code class="tage">&lt;small&gt;</code> : element represents side-comments and small print. independent of
+          its
+          styled
+          presentation. By
+          default, its renders text within it one font-size smaller, such as from <code
+            class="tage">&lt;small&gt;</code> to
+          &lt;x-small&gt;.</p>
+
+        <p><code class="tage">&lt;sup&gt;</code> format text as <sup>superscript</sup> text.</p>
+        <p><code class="tage">&lt;sub&gt;</code> format text as <sub>subscript</sub> text.</p>
+        <p><code class="tage">&lt;small&gt;</code> tage format text as <small>Smaller</small> text.</p>
+
+        <!-- <del> & <ins> Text -->
+        <h4><code class="tage">&lt;del&gt;</code> & <code class="tage">&lt;ins&gt;</code> Text</h4>
+        <p><code class="tage">&lt;ins&gt;</code> : The inserted text represents a range of text that has been added to a
+          document.
+        </p>
+        <p><code class="tage">&lt;del&gt;</code> : The deleted text element similarly represents a range of text that
+          has been
+          deleted from the
+          document.</p>
+
+        <p> <code class="tage">&lt;ins&gt;</code> format text as <ins>inserted</ins> text.</p>
+        <p><code class="tage">&lt;del&gt;</code> format text as dash text or <del>delete</del> text.</p>
+
+      </div>
+      <strong>For Example</strong>
+      <div class="for-example code"></div>
+    </div>
+    <!-- <a> link anchor tage -->
+    <h3 class="heading">Link Anchor</h3>
+    <hr>
+    <div class="content">
+      <div class="docs">
+        <p><code class="tage">&lt;a&gt;</code> : (anchor element), with its href attribute creates a hyperlink to web
+          pages,
+          files,
+          email addresses,
+          locations in the same page, or anything else a URL can address. Content within each
+          <code class="tage">&lt;a&gt;</code>
+          should indicate the
+          link's destination, if the href attribute is present, pressing the enter key while focused on the
+          <code class="tage">&lt;a&gt;</code> element
+          will activate it.
+        </p>
+        <h4><code class="tage">&lt;a&gt;</code> anchor attributes : </h4>
+        <ul>
+          <li><strong>download</strong> : <p>rompts the user to save the linked URL instead of navigating to it.
+              Can
+              be used
+              with or without a
+              value:</p>
+            <ul>
+              <li>
+                <p>Without a value, the browser will suggest a filename/extention, generated from various
+                  sources.
+                </p>
+                <ul>
+                  <li>The 'Content-Disposition' HTTTP header</li>
+                  <li>The Final segment in the URL path</li>
+                  <li>The media type (from the Content-Type) header the start of a data: URL or Blob.type for a
+                    blob:
+                    URL</li>
+                </ul>
+              </li>
+              <li>
+                <p>Defining a value suggests it as the filename / and \ characters are converted to underscores
+                  (_)
+                </p>
+                <ul>
+                  <li>
+                    <p>Filesystems may forbid other characters in filenames, so browsers will adjust the
+                      suggested
+                      name if necessary.</p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><strong>hreflang</strong></li>
+          <li><strong>target</strong></li>
+          <li><strong>type</strong></li>
+          <li><strong>ping</strong></li>
+          <li><strong>rel</strong></li>
+          <li><strong>referrerpolicy</strong></li>
+        </ul>
+      </div>
+      <strong>For Example</strong>
+      <div class="for-example code">
+        <a href="" download="" hreflang="" target="" type="" ping="" rel="" referrerpolicy=""></a>
+      </div>
+    </div>
+    <!-- <img>: The Image Embed element -->
+    <h3 class="heading">The Image Embed element</h3>
+    <hr>
+    <div class="content">
+      <div class="docs">
+        <p>The <code class="tage">&lt;img&gt;</code> embeds an images into the document.</p>
+        <ul>
+          <li>
+            <p>The <code class="tage">src</code> attribute is <strong>required</strong>, and contains the path to the
+              image
+              you
+              wnat
+              to embed.</p>
+          </li>
+          <li>
+            <p>The <code class="tage">alt</code> attribute holds a text description of the image, which isn't mandatory
+              but
+              is
+              <b>incredibly useful</b> for accessibility -- screen readers read this description out to their
+              users
+              so they know what the image means. Alt text is also dispalyed on the page if the image can't be
+              loaded
+              for some reason: for example, network errors, content blocking, or linkrot.
+            </p>
+          </li>
+          <li>
+            <p>The <code class="tage">width</code> attribute intrinsic witdth of the image in pixels, Must be an integer
+              without
+              a unit.</p>
+          </li>
+          <li>
+            <p>The <code class="tage">height</code> attribute intrinsic height of the image, in pixels, Must be an
+              integer
+              without a unit.</p>
+          </li>
+          <li>
+            <p>The <code class="tage">decoding</code> attribute provides an image decoding hint to the browser, Allowed
+              values:
+            </p>
+            <ul>
+              <li>
+                <strong>sync</strong>
+                <p>Decode the image synchronously, for atomic presentation with other content.</p>
+              </li>
+              <li>
+                <strong>async</strong>
+                <p>Decode the image asynchronously, to reduce delay in presenting other content.</p>
+              </li>
+              <li>
+                <strong>auto</strong>
+                <p>Default: no preference for the decoding mode, The browser decides what is best for the user
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>The <code class="tage">ismap</code> this boolean attribute indicates that the image is part of a
+              <u>server-side-map</u>. if so the coordinates where the user clicked on the image are sent to
+              the
+              server .
+            </p>
+          </li>
+          <li>
+            <p>The <code class="tage">src</code> the image <u>URL</u>, Mandatory for the &lt;img&gt; element, On
+              browsers
+              supporting <code class="tage">srcset</code>, <code class="tage">src</code> is treated like a candidate
+              image with a pixel
+              density descriptor <small>1x</small> unless an image with pixel density descriptor is already
+              defined
+              is <code class="tage">srcset</code>, or unless <code class="tage">srcset</code> contains <small>w</small>
+              description.</p>
+          </li>
+          <li>
+            <p>The <code class="tage">srcset</code> one or more strings separated by commas, indicating possible image
+              sources
+              for the <u>user agent</u> to use, Each string is composed of:</p>
+            <ol>
+              <li>
+                <p>A <u>URL</u> to an image</p>
+              </li>
+              <li>
+                <p>Optionally, whitespace followed by one of:</p>
+                <ul>
+                  <li>A width descriptor (a positive integer directly followed by <code class="tage">w</code>). The
+                    width
+                    descriptor is divided by the source size given in the <b>size</b> attribute to calculate
+                    the
+                    effective pixel density. </li>
+                  <li>
+                    A pixel density descriptor (a positive floating point number directly followed by
+                    <code class="tage">x</code>)
+                  </li>
+                </ul>
+              </li>
+            </ol>
+            <p>If no descriptor is specified, the source is assigned the default descriptor of <code
+                class="tage">1x</code>
+            </p>
+            <p>It is incorrect to mix width descriptors and pixel density descriptors in the same
+              <code class="tage">srcset</code> attribute, Duplicate (for instance, two sources in the same
+              <code class="tage">srcset</code>
+              which are both described with <code class="tage">2x</code> are also invalid.
+            </p>
+            <p>The user agent selets any of the available sources at its discretion, This provides them with
+              significant leeway to tailor their selection based on things like user preferences or
+              <u>bandwidth</u>
+              conditions.
+            </p>
+          </li>
+          <li>
+            <p>The <code class="tage">size</code> One or more strings separated by commas, indicating a set of source
+              size,
+              Each
+              source consists of:</p>
+            <ol>
+              <li>A <u>media condition</u>, This must be omitted for the last item in the list.</li>
+              <li>A source size value.</li>
+            </ol>
+            <p>Media Conditions describe properties of the <i>viewport</i>, not of image. for example
+              <code class="tage">(max-height: 500px) 1000px</code> proposes to use a source of 1000px width, if the
+              <i>viewport</i> is not higher than 500px
+            </p>
+            <p>Source size value specify the intended dispaly size of the image, <u>User agents</u> use the
+              current
+              source size to select one of the source supplied by the <code class="tage">srcset</code> attribute, when
+              those
+              sources are described using width <code class="tage">(w)</code> descriptors. the selected source size
+              affects
+              the
+              <u>intrisic size</u> of the image (the image's display size if no CSS styling is applied) If the
+              <code class="tage">srcset</code> attribute is absent, or contains no valuse with a width descriptor, then
+              the
+              <code class="tage">size</code> attribute has no effect.
+            </p>
+          </li>
+          <li>The <code class="tage">crossorigin</code>
+            <p>indicates if fetching of the image must be done using a <u>CORS</u>
+              request. Image data from a <u>CORS-enabled image</u> returend from a CORS request can be reused
+              in
+              the
+              <u>&lt;canvas&gt;</u> element without being marked "tained".
+            </p>
+            <p>If the <code class="tage">croosorigin</code> attribute is not specified, then a non-CORS request is sent
+              (without
+              the <u>Origin</u> request header), and the browser marks the image as tained and restricts
+              access
+              to
+              its image data, preventing its usage in <u>&lt;canvas&gt;</u> elements.</p>
+            <p>If the <code class="tage">croosorigin</code> attribute is specified, then a CORS request is sent (with
+              the
+              <u>Origin</u> request header); but if the sever does not opt into allowing cross-origin access
+              to
+              the
+              image data by the origin site (by not sending any <u>Access-Controle-Allow-Origin</u> response
+              header,
+              or by not including the site's origin in any <u>Access-Controle-Allow-Origin</u> reponse header
+              it
+              does send), then the browser marks the image as tainted and restricts access to its image data,
+              preventing its usage in <u>&lt;canavs&gt;</u> elements.
+            </p>
+            <p><strong>Allowed Values :</strong></p>
+            <strong>anonymous</strong>
+            <p>A CORS request is sent with credentials (that is, no <u>cookies</u>, or <u>Authorization</u>
+              request
+              header</p>
+            <strong>use-credentials</strong>
+            <p>The CORS request is sent with any credentials included (that is cookies, X.509 certificates,
+              and
+              the
+              Authorization request header). If the server does not opt into sharing credentials wiht the
+              origin
+              site (by sending back the <small>Access-Controle-Allow-Credentials : true</small>, response
+              header),
+              then the browser marks the image as tained and restricts access to its image data. </p>
+            <br>
+            <p>If the attribute has an invalid value, browsers hander it as if the <code class="tage">anonymos</code>
+              value
+              was
+              used.</p>
+          </li>
+
+        </ul>
+      </div>
+      <strong>For Example</strong>
+      <div class="for-example">
+        <img src="" alt="" width="" height="" decoding="" ismap srcset="" sizes="" crossorigin="">
+      </div>
+    </div>
+    <!-- <ul> & <ol> & <dl> List  -->
+    <h3 class="heading">The Unordered & Ordered & Description List elements.</h3>
+    <hr>
+    <div class="content">
+      <div class="docs">
+        <!-- <ul> Unorderd Lists -->
+        <strong><code class="tage">&lt;ul&gt;</code> Unorderd List</strong>
+        <ul>
+          <li>
+            The <code class="tage">&lt;ul&gt;</code> represents an unorderd list of items, typically rendered as
+            bulleted
+            list.</li>
+          <li>This element includes the <u>global attribute</u></li>
+          <li>All attribute of &lt;ul&gt; will remove form support list attribute (<code class="tage">compact</code>,
+            <code class="tage">type</code>)
+          </li>
+          <p>The &lt;ul&gt; element is for grouping a collection of items that do not have a numerical
+            ordering</p>
+        </ul>
+
+        <!-- <ul> Orderd Lists -->
+        <strong><code class="tage">&lt;ol&gt;</code> Ordered List</strong>
+        <ul>
+          <li>The <code class="tage">&lt;ol&gt;</code> represents an ordered list of items --- typically rendered as a
+            numbered list.</li>
+          <li>This element also accepts the <u>global attribute</u></li>
+          <strong>reversed</strong>
+          <p>This boolean attribute specifies that the list's items are in reverse order, Items will be
+            numbered form hight to low.</p>
+          <strong>start</strong>
+          <p>An integer to start counting from for the list items, Allways an Arabic numerical (1,2,3,etc.)
+            even when the numbering <small>type</small> is letters or Roman numerals. For example, to start
+            numbering elements from the letter "d" or the Roman numeral "iv," use <small>start="4"</small>
+          </p>
+          <strong>type</strong>
+          <p>Sets the numbering type :</p>
+          <ul>
+            <li><code class="tage">a</code> for lowercase letters</li>
+            <li><code class="tage">A</code> for uppercase letters</li>
+            <li><code class="tage">i</code> for lowercase Roman numerals</li>
+            <li><code class="tage">I</code> for uppercase Roman numerals</li>
+            <li><code class="tage">1</code> for numbers (default)</li>
+          </ul>
+          <p>To determin which list to use, try changing the order of the list items; if the meaning changes,
+            use <code class="tage">&lt;ol&gt;</code> element --- otherwise you can use <code
+              class="tage">&lt;ul&gt;</code></p>
+          <p>Typically, ordered list items display with a preceding <u>marker</u>, such as a number or letter.
+          </p>
+        </ul>
+        <!-- <ul> Description Lists -->
+        <strong><code class="tage">&lt;dl&gt;</code> Description List</strong>
+        <ul>
+          <li>The <code class="tage">&lt;dl&gt;</code> element represents a description list, The element encloses a
+            list
+            of
+            group of
+            terms (specified using the <code class="tage">&lt;dl&gt;</code> element). Common uses for this element are
+            to
+            implement a
+            glossary or to dispaly metadata (a list of key-value pairs).</li>
+          <p>The element only includes the <u>global attribute</u></p>
+        </ul>
+        <strong>Note</strong>
+        <p>Do not use this element (nor <code class="tage">&lt;ul&gt; </code> elements) to merely cerate indentation on
+          a
+          page,
+          Although it works, this is bad practice and obscures the meaning of description lists.</p>
+      </div>
+      <strong>For Example</strong>
+      <div class="for-example code">
+        <strong>Unorderd list</strong>
+        <ul>
+          <li>All attribute of &lt;ul&gt; will remove from support list attribute (compact, type)</li>
+          <li>This element includes the global attribute</li>
+        </ul>
+        <strong>Orderd list</strong>
+        <ol type="3" start="8">
+          <li>To determin which list to use, try changing the order of the list items; if the meaning changes.
+          </li>
+          <li>The element attribute (reversed, start, type)
+            <ol reversed>
+              <li>
+                <b>reversed</b>
+                <p>Items will be numbered form hight to low.</p>
+              </li>
+              <li>
+                <b>start</b>
+                <p>An integer to start counting from for the list items.</p>
+              </li>
+              <li>
+                <b>type</b>
+                <p>To Set the numbering type.</p>
+              </li>
+            </ol>
+          </li>
+        </ol>
+        <strong>Description list</strong>
+        <dl>
+          <dt><code class="tage">&lt;dl&gt;</code> The Description List element</dt>
+          <dt><code class="tage">&lt;dt&gt;</code> The Description Term element</dt>
+          <dd>The <code class="tage">&lt;dt&gt;</code> specifies a term in a description or definition list, and as such
+            must
+            be used inside a <code class="tage">&lt;dl&gt;</code> element. It is usually followed by a
+            <code class="tage">&lt;dd&gt;</code> element; however, multiple <code class="tage">&lt;dt&gt;</code>
+            elements in a row
+            indicate several terms that are all defined by the immediate next <code class="tage">&lt;dd&gt;</code>
+            element.
+          </dd>
+          <dt><code class="tage">&lt;dd&gt;</code> The Description Details element</dt>
+          <dd>The <code class="tage">&lt;dd&gt;</code> provides the description, definition, or value for the preceding
+            term
+            (<code class="tage">&lt;dt&gt;</code>) in a description list (<code class="tage">&lt;dl&gt;</code>>).</dd>
+        </dl>
+      </div>
+    </div>
+    <!-- <table>: The Table element -->
+    <h3 class="heading">The Table element</h3>
+    <hr>
+    <div class="content">
+      <div class="docs">
+        <p>The <code class="tage">&lt;table&gt;</code> represents tabular data --- that is, information presented in
+          two-dimensional table comprised of rows and columns of cells containing data.</p>
+        <p>This element includes the <u>global attribute</u></p>
+        <p>All attribute of this element should no longer be used (<code class="tage">align</code>, <code
+            class="tage">bgcolor</code>,
+          <code class="tage">border</code>, <code class="tage">cellpadding</code>, <code class="tage">frame</code>,
+          <code class="tage">cellspacing</code>,
+          <code class="tage">rules</code>, <code class="tage">summary</code>, <code class="tage">width</code>)
+        </p>
+        <dl>
+          <dt><code class="tage">&lt;thead&gt;</code></dt>
+          <dd>The <code class="tage">&lt;thead&gt;</code> defines a set of rows defining the head of the columns of the
+            table
+          </dd>
+          <dt><code class="tage">&lt;tbody&gt;</code></dt>
+          <dd>The HTML tabel body element (<code class="tage">&lt;tbody&gt;</code>) encapsulates a set of table rows
+            (&lt;tr&gt; elements), indicating that they comprise the body of the table
+            (><code class="tage">&lt;tbody&gt;</code>) </dd>
+          <dd>The <code class="tage">&lt;tbody&gt;</code> element, along with its cousins <code
+              class="tage">&lt;thead&gt;</code> and
+            <code class="tage">&lt;tfoot&gt;</code>, provide useful semantic information that can be used when redering
+            for
+            either screen or printer as well as for <u>accessibility</u> purposes.
+          </dd>
+          <strong>Note</strong>
+          <ul>
+            <li>If the table includes a <code class="tage">&lt;thead&gt</code>; block must come after it.</li>
+            <li>If you use <code class="tage">&lt;tbody&gt;</code>, you can't also have tbale rows (<code
+                class="tage">&lt;tr&gt;</code>
+              elements) which are direct children of the <code class="tage">&lt;table&gt;</code> but not included inside
+              the
+              <code class="tage">&lt;tbody&gt;</code>, All non-header and non-footer rows must be inside the
+              <code class="tage">&lt;tobdy&gt;</code> if one is used
+            </li>
+            <li>When printing a document, the <code class="tage">&lt;thead&gt</code>; and <code
+                class="tage">&lt;tfoot&gt;</code>
+              elements
+              specify
+              information that
+              may be the same --- or at least very similar -- on every page of multi-page table, while the
+              <code class="tage">&lt;tbody&gt;</code> element's contents generally will differ form page to page.
+            </li>
+            <li>When a tabel is presented in a screen context (such as a window), which is not larger engough
+              to
+              dispaly the entire tabel, the <u>user agent</u>, may let the user scroll the contents of the
+              <code class="tage">&lt;thead&gt;</code>, <code class="tage">&lt;tbody&gt;</code>, <code
+                class="tage">&lt;tfoot&gt;</code>, and
+              &lt;caption&gt; blocks separately from on another for the same parent table.
+            </li>
+            <li>You may use more than one <code class="tage">&lt;tbody&gt;</code> per tabel longe as they are all
+              consecutive, This lets you divide the rows in large tabels in sections, each of which may be
+              separatey formatted if so desired.</li>
+          </ul>
+          <dt><code class="tage">&lt;tfoot&gt;</code></dt>
+        </dl>
+        <dl>
+          <dt><code class="tage">&lt;tr&gt;</code> : The Table Row element</dt>
+          <dd>The <code class="tage">&lt;tr&gt;</code> defines a row of cells in tabel, The row's cells can then be
+            established using mix of <code class="tage">&lt;td&gt;</code> (data cell) and
+            <code class="tage">&lt;th&gt; (header cell) elements.</code>
+          </dd>
+          <dd>This element includes the <u>global attribute</u> may still be implemented in browsers but are
+            no
+            longer part of HTML specification and may be missing or may not work as expected, They should be
+            avoided.</u></dd>
+          <dt><code class="tage">&lt;th&gt;</code> : The Table Header Cell element</dt>
+          <dd>The <code class="tage">&lt;th&gt;</code> defines a cell as header of a group of table cells, The exact
+            nature
+            of this group is defined by the <small><u>scop</u></small> and <small><u>header</u></small>
+            attribute.</dd>
+          <strong>Attributes</strong>
+          <dd>This element includes the <u>global attributes</u>.</dd>
+          <dl>
+            <dt><strong><code class="tage">addr</code></strong></dt>
+            <dd>This attribute contains a short abbreviated description of the cell's content, Some
+              user-agents,
+              such as speech reades, may present this description before the content itself.</dd>
+            <dt><strong><code class="tage">colspan</code></strong></dt>
+            <dd>This attribute contains a non-negative integer value that indicates for how many columns the
+              cell extends, Its default value is 1, Value higher than 1000 will be considered as incorrect and
+              will be set a default value (1).</dd>
+            <dt><strong><code class="tage">headers</code></strong></dt>
+            <dd>This attribute contains a list of space-separated strings, each corresponding to the <b>id</b>
+              attribute of the <code class="tage">&lt;th&gt;</code> elements that apply to this element.</dd>
+            <dt><strong><code class="tage">rowspan</code></strong></dt>
+            <dd>This attribute contains a non-negative integer value that indicates for how many rows the cell
+              extends, Its default value is 1; If its value is set to 0, it extends until the end of the table
+              section (<code class="tage">&lt;thead&gt;</code>, <code class="tage">&lt;tbody&gt;</code>, <code
+                class="tage">&lt;tfoot&gt;</code>,
+              even
+              if implicitly defined), that the cell belongs to, Value higher than 65534 are clipped down to
+              65534.</dd>
+            <dt><strong><code class="tage">scope</code></strong></dt>
+            <dd>This enumerated attribute defines the cells that header (defined in the
+              <code class="tage">&lt;th&gt;</code>)
+              element relates to, It may have the following value :
+            </dd>
+            <ul>
+              <li><code class="tage">row</code>: The header relates to all cells of the row it belongs to.</li>
+              <li><code class="tage">col</code>: The header relates to all cells of the columns it belongs to.</li>
+              <li><code class="tage">rowgroup</code>: The header belongs to a rowgroup and relates to all of its cells,
+                These
+                cells can be placed to the right or the left of the header, depending on the value of the
+                <code class="tage">dir</code> attribute in the <code class="tage">&lt;table&gt;</code> element.
+              </li>
+              <li><code class="tage">colgroup</code>: The header belongs to a colgroup and relates to all of its cells.
+              </li>
+              <p>If the scope attribute is not specified, or its value is not <small>row, col</small>, or
+                <small>rowgroup</small> or <small>colgroup</small>, then browsers automatically select the set
+                of cells to which the header cell applies.
+              </p>
+            </ul>
+          </dl>
+          <dt><code class="tage">&lt;td&gt;</code></dt>
+          <dd>The <code class="tage">&lt;td&gt;</code> defines a cell of a tabel that contains data, It participates in
+            the
+            <i>table model.</i>
+          </dd>
+          <strong>Attributes</strong>
+          <p>This element includes the <u>global attribute</u>.</p>
+          <p>This element use the same attribute in <code class="tage"><strong>&lt;th&gt;</strong></code> element. and
+            more
+            attr</p>
+          <p><strong><code class="tage">colspan</code></strong>, <strong><code class="tage">headers</code></strong>,
+            <strong><code class="tage">rowspan</code></strong>, <strong><code class="tage">addr</code></strong>,
+            <strong><code class="tage">axis</code></strong>, <strong><code class="tage">scope</code></strong>,
+            <strong><code class="tage">width</code></strong>
+          </p>
+        </dl>
+        <dl>
+          <dt><code class="tage">&lt;colgroup&gt;</code></dt>
+          <dd>The <code class="tage">&lt;colgroup&gt;</code> defiens a group of columns within a table.</dd>
+          <strong>Attributes</strong>
+          <p>This element includes the <u>global attributes</u>.</p>
+          <p>This element use the same attribute in <code class="tage"><strong>&lt;col&gt;</strong></code> element. and
+            more
+            attr</p>
+          <p><code class="tage"><strong>span</strong></code>, <code class="tage"><strong>width</strong></code></p>
+          <dt><code class="tage">&lt;col&gt;</code></dt>
+          <dd>This <code class="tage">&lt;col&gt;</code> defines a column within a table and is used for defining common
+            semantics on all common cells, It is generally found within a <code class="tage">&lt;colgroup&gt;</code>
+            element.
+          </dd>
+          <dl>
+            <dt><strong><code class="tage">span</code></strong></dt>
+            <dd>This attribute contains a positive integer indicating the number of consecutive columns the
+              <code class="tage">&lt;col&gt;</code> element spans. If not present, Its default value is 1.
+            </dd>
+            <p>All attributes of this element are deprecated and should not be used.</p>
+          </dl>
+
+          <dt><code class="tage">&lt;caption&gt;</code></dt>
+          <dd>The <code class="tage">&lt;caption&gt;</code> specifies the caption (or title) of a table.</dd>
+          <strong>Attributes</strong>
+          <p>This element includes the <u>global attributes</u>.</p>
+          <p>All attributes of this element are deprecated and should not be used.</p>
+          <dl>
+            <dt><code class="tage">align</code></dt>
+            <dd>
+              <dl>
+                <dt><strong>left</strong></dt>
+                <dd>This caption is displayed to the left of the table.</dd>
+                <dt><strong>top</strong></dt>
+                <dd>This caption is dispalyed above the table.</dd>
+                <dt><strong>right</strong></dt>
+                <dd>This caption is displayed to the right of the tabel.</dd>
+                <dt><strong>bottom</strong></dt>
+                <dd>This caption is dispalyed bellow the tabel</dd>
+              </dl>
+            </dd>
+          </dl>
+          <strong>Usage notes</strong>
+          <div class="code">Do not use this attribute, as is has been deprecated, The &lt;caption&gt; element should be
+            styled using <u>CSS</u> properities <u>caption-side</u> and <u>text-align</u></div>
+          <strong>Note</strong>
+          <p>The <code class="tage">&lt;caption&gt;</code> element should be the first child of its parent
+            <code class="tage">&lt;table&gt;</code> element.
+          </p>
+          <p>When the <code class="tage">&lt;table&gt;</code> element that contains the <code
+              class="tage">&lt;caption&gt;</code> is the
+            only descendent of a <code class="tage">&lt;figure&gt;</code> element, you should use the
+            <code class="tage">&lt;figcaption&gt;</code> element instead of <code class="tage">&lt;caption&gt;</code>
+          </p>
+        </dl>
+      </div>
+      <strong>For Example</strong>
+      <div class="for-example">
+
+        <p>Simple table with header</p>
+        <table>
+          <caption><code class="tage">&lt;caption&gt;</code></caption>
+          <tr>
+            <th><code class="tage">&lt;th&gt;</code></th>
+            <th><code class="tage">&lt;th&gt;</code></th>
+          </tr>
+          <tr>
+            <td><code class="tage">&lt;td&gt;</code></td>
+            <td><code class="tage">&lt;td&gt;</code></td>
+          </tr>
+        </table>
+        <p>Table with thead, tfoot, and tbody</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Header content 1</th>
+              <th>Header content 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Body content 1</td>
+              <td>Body content 2</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Footer content 1</td>
+              <td>Footer content 2</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <p>Table with colgroup</p>
+        <table>
+          <colgroup span="4"></colgroup>
+          <tr>
+            <th>Countries</th>
+            <th>Capitals</th>
+            <th>Population</th>
+            <th>Language</th>
+          </tr>
+          <tr>
+            <td>USA</td>
+            <td>Washington, D.C.</td>
+            <td>309 million</td>
+            <td>English</td>
+          </tr>
+          <tr>
+            <td>Sweden</td>
+            <td>Stockholm</td>
+            <td>9 million</td>
+            <td>Swedish</td>
+          </tr>
+        </table>
+        <p>Table with colgroup and col</p>
+        <table>
+          <colgroup>
+            <col style="background-color: rgb(66 165 245 / 33%);">
+            <col span="2">
+          </colgroup>
+          <tr>
+            <th>Lime</th>
+            <th>Lemon</th>
+            <th>Orange</th>
+          </tr>
+          <tr>
+            <td>Green</td>
+            <td>Yellow</td>
+            <td>Orange</td>
+          </tr>
+        </table>
+
+        <p>Simple table with caption</p>
+        <table>
+          <caption>Awesome caption</caption>
+          <tr>
+            <td>Awesome data</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- <span>, <br>, <hr>  elements -->
+    <h3 class="heading">Span & Break & Horizontal Rule</h3>
+    <hr>
+    <div class="content">
+      <div class="docs">
+        <!-- <span> -->
+        <dl>
+          <dt><code class="tage"><strong>&lt;span&gt;</strong></code></dt>
+          <dd>The <code class="tage">&lt;span&gt;</code> is a generic inline container for phrasing content, which does
+            not
+            inherently represent anything, It can be used to group elements for styling purposes (using the <u>class</u>
+            or <u>id</u> attribute), or because they share attribute values, such as <u>lang</u>, It should be used only
+            when no other semantic element is appropriate, <code class="tage">&lt;span&gt;</code> is very much like a
+            <code class="tage">&lt;div&gt;</code> element, but <code class="tage">&lt;div&gt;</code> is a
+            <u>block-level-element</u> whereas
+            a<code class="tage">&lt;span&gt;</code> is an <u>inline-element</u>
+          </dd>
+          <strong>Attributes</strong>
+          <dd>This element only includes the <u>global attributes</u>.</dd>
+        </dl>
+        <!-- <br> : The Line Break element -->
+        <dl>
+          <dt><strong><code class="tage">&lt;br&gt;</code> : The Line Break element</strong></dt>
+          <dd>The <code class="tage">&lt;br&gt;</code> produces a line break in text (carriage-return), It is useful for
+            writing a
+            poem or an address, where the division of lines is significant.</dd>
+          <strong>Note</strong>
+          <dd>Do not use <code class="tage">&lt;br&gt;</code> to create margins between paragraphs; wrap them
+            in <code class="tage">&lt;p&gt;</code> elements and use the <u>CSS</u> <u>margin</u> property to controle
+            their size.
+          </dd>
+          <strong>Attributes</strong>
+          <dd>This element's attributes include the <u>global attributes</u>.</dd>
+          <code class="attr"><strong>clear</strong></code>
+          <dd>Indicate where to begain the next line after the break.</dd>
+          <strong>CSS Styling</strong>
+          <dd>The <code class="tage">&lt;br&gt;</code> element has a single, well-defined purpose -- to create a line
+            break in a
+            block of text, As such, it has no dimensions or visual output of its own, and there is very little you can
+            do to style it.</dd>
+          <dd>You can set <u>margin</u> on <code class="tage">&lt;br&gt;</code> elements themselves to increase the
+            spacing between
+            the lines of text in the block, but this is a bad practice -- you should use the <u>line-height</u> property
+            that was designed for that purpose.</dd>
+        </dl>
+        <strong>Accessibility</strong>
+        <p>Creating separate paragraph of text using <code class="tage">&lt;br&gt;</code> is not only bad practice, its
+          problematic
+          for people who navigate with the aid of screen reading techology, Screen readers may announce the presence of
+          the element, but not any content contained within <code class="tage">&lt;br&gt;</code>s, This can be a
+          confusing and
+          frusting experience for the person using the screen reader.</p>
+        <p>Use <code class="tage">&lt;p&gt;</code> elements, and use CSS properities like <u>margin</u> to controle
+          their spacing.
+        </p>
+        <!-- <hr> : The Thematic Break (Horizontal Rule) element -->
+        <dl>
+          <dt><strong><code class="tage">&lt;hr&gt;</code> : The Thematic Break (Horizontal Rule) element</strong></dt>
+          <dd>The <code class="tage">&lt;hr&gt;</code> represents a thematic break between paragraph-level elements; for
+            example, a
+            change of scene in a story, or a shift of topic within a section.</dd>
+          <dd>Historically, this has been presented as horizontal rule of line, While it may still be displayed as a
+            horizontal rule in visual browsers, this element is now defined in semantic terms, rather than presntatinal
+            terms, so if you wish to draw a horizontal line, you should do so usign appropriate CSS.</dd>
+          <strong>Attributes</strong>
+          <dd>This element's attributes include the <u>global attributes</u>.</dd>
+          <dd>All attribute of this element should no longer be used (<code class="attr">align</code>, <code
+              class="attr">color</code>, <code class="attr">noshade</code>, <code class="attr">size</code>, <code
+              class="attr">width</code>)</dd>
+        </dl>
+      </div>
+      <strong>For Example</strong>
+      <div class="for-example code">
+
+      </div>
+    </div>
+    <!-- <div> : The Content Division element.  -->
+    <h3 class="heading">The Division element</h3>
+    <hr>
+    <div class="content">
+      <div class="docs">
+        <dl>
+          <dt><strong><code class="tage">&lt;div&gt;</code> : The Content Division element</strong></dt>
+          <dd>The HTML Content Division element (<code class="tage">&lt;div&gt;</code>) is the generic container for
+            flow content, It has no effect on the content or layout until styled in some way using <u>CSS</u> (styling
+            is directly applied to it, or some kind of layout model like <u>Flexbox</u> is applied to its parent
+            element).</dd>
+          <dd>As a "pure" container, the <code class="tage">&lt;div&gt;</code> element does not inherently represent
+            anything. Instead, It's used to group content so it can't be easily styled using the
+            <small><u>class</u></small> or <small><u>id</u></small> attributes, marking a section of a document as being
+            written in a different language (using the <small><u>lang</u></small> attribute), and so on.
+          </dd>
+        </dl>
+        <strong>Attributes</strong>
+        <dd>This element includes the <u>global attributes</u>.</dd>
+        <strong>Note</strong>
+        <ul>
+          <li>The <code class="attr">align</code> attribute is obesolete; do not use it anymore, Instead, you should use
+            CSS properities or technologies such as <u>CSS Grid</u> or <u>CSS Flexbox</u> to align and position <code
+              class="tage">&lt;div&gt;</code> elements on the page.</li>
+          <li>The <code class="tage">&lt;div&gt;</code> element should be used only when on other semantic element (such
+            as <code class="tage">&lt;article&gt;</code> or <code class="tage">&lt;nav&gt;</code>) is apporpirate.</li>
+          <li>The <code class="tage">&lt;div&gt;</code> is container for HTML elements, Do not use as container of
+            paragraph instead of <code class="tage">&lt;p&gt;</code> element.</li>
+        </ul>
+      </div>
+      <strong>For Example</strong>
+      <div class="for-example code">
+        <p><code class="tage">&lt;div</code> <code class="attr">class</code>=<code class="value">"shadowbox"</code>
+          <code class="tage">&gt;</code>
+        </p>
+        <p><code class="tage">&lt;p&gt;</code>Here's a very interesting note displayed in a
+          lovely shadowed box.<code class="tage">&lt;/p&gt;</code>
+        <p><code class="tage">&lt;/div&gt;</code></p>
+
+      </div>
+    </div>
+    <!-- HTML Entities -->
+    <h3 class="heading">HTML Entities</h3>
+    <div class="content">
+      <div class="docs">
+        <p>Complete list of HTML entities with their numbers and names, Also included is a full list of <u
+            class="value">ASCII</u> characters that can be represented in HTML (i.e printable characters).</p>
+        <ul>
+          <li><b class="value">ASCII Characters</b></li>
+          <li><b class="value">ISO 8859-1 Characters</b></li>
+          <li><b class="value">ISO 8859-1 Symbols</b></li>
+          <li><b class="value">Math Symbols</b></li>
+          <li><b class="value">Greek letters</b></li>
+          <li><b class="value">Miscellaneous HTML entities </b></li>
+        </ul>
+        <strong>Entities List</strong>
+        <p>Only printable characters are dispalyed as controle characters (0-31) shouldn't be present in HTML pages
+          since they have no visual representations.</p>
+        <table>
+          <caption></caption>
+          <thead>
+            <tr>
+              <td>Characters</td>
+              <td>Entity Name</td>
+              <td>Entity Number</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tbody>
+          <tfoot></tfoot>
+        </table>
+        <strong>Note</strong>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+      <strong>For Example</strong>
+      <p>This example show you syntax of HTML Enities</p>
+      <div class="for-exmaple code">
+        <p>Licensed under the Creative Commons Attribution-ShareAlike License <u class="attr"> & copy;</u> // ©</p>
+      </div>
+    </div>
+    <!-- Semantic HTML -->
+    <h3 class="heading">Semantic HTML</h3>
+    <div class="content">
+      <div class="docs">
+        <p>All HTML Semantic tags <code class="tage">&lt;header&gt;</code>, <code class="tage">&lt;nav&gt;</code>, <code
+            class="tage">&lt;main&gt;</code>, <code class="tage">&lt;section&gt;</code>, <code
+            class="tage">&lt;aside&gt;</code>, <code class="tage">&lt;article&gt;</code>, <code
+            class="tage">&lt;details&gt;</code>, <code class="tage">&lt;figcaption&gt;</code>, <code
+            class="tage">&lt;figure&gt;</code>, <code class="tage">&lt;summary&gt;</code>, <code
+            class="tage">&lt;time&gt;</code>, <code class="tage">&lt;mark&gt;</code>, <code
+            class="tage">&lt;footer&gt;</code></p>
+
+        <!-- <header> -->
+        <div class="term">
+          <dl>
+            <dt><code class="tage">&lt;header&gt;</code></dt>
+            <dd>The <code class="tage">&lt;header&gt;</code> represents introductory content, typically a group of
+              introductory or navigational aids, It may contain some heading elements but also a logo, a search form, an
+              author name and other elements.</dd>
+            <strong>Attributes</strong>
+            <dd>This element only includes <u>global attributes</u>. </dd>
+          </dl>
+          <strong>Note</strong>
+          <ul>
+            <li>The <code class="tage">&lt;header&gt;</code> element is not sectioning content and therefore does not
+              intruduce a new section in the <u>outline</u>, The, said, a <code class="tage">&lt;header&gt;</code>
+              element
+              is intended to usally contain the surrouding section's heading (an <code class="tage">&lt;h1&gt;</code> -
+              <code class="tage">&lt;h1&gt;</code> element), but this not required.
+            </li>
+            <li></li>
+          </ul>
+          <strong>For Example</strong>
+          <!-- <header> example -->
+          <div class="for-example">
+            <p></p>
+            <div class="code">
+              <p><code class="tage">&lt;header&gt;</code></p>
+              <p><code class="tage">&lt;h1&gt;</code>Main Page Title <code class="tage">&lt;h1&gt;</code></p>
+              <p><code class="tage">&lt;img&gt;</code><code class="attr">src=<span
+              class="value">"mdn-logo-sm.png"</span> <span class="attr">alt=</span><span class="value">"MDN logo"</span>
+            <span class="tage">&gt;</span></code>
+              </p>
+              <p><code class="tage">&lt;/header&gt;</code></p>
+            </div>
+            <p>Article Header</p>
+            <div class="code">
+              <p><code class="tage">&lt;article&gt;</code></p>
+              <p><code class="tage">&lt;header&gt;</code></p>
+              <p><code class="tage">&lt;h2&gt;</code> The Planet Earth <code class="tage">&lt;/h2&gt;</code></p>
+
+              <p><code class="tage">&lt;p&gt;</code> Posted on Wednesday, <code
+                  class="tage">&lt;time <span class="attr">datetime=</span><span class="value">"2017-10-04</span> &gt;</code>
+                4 October 2017 <code class="tage">&lt;/time&gt;</code> by Jane Smith <code
+                  class="tage">&lt;/p&gt;</code>
+              </p>
+              <!-- <p><time datetime="2017-10-04">4 October 2017</time> by Jane Smith</p> -->
+              <code class="tage">&lt;header&gt;</code>
+              <p><code class="tage">&lt;p&gt;</code>We live on a planet that's blue and green, with so many things still
+                unseen.<code class="tage">&lt;/p&gt;</code></p>
+              <p><code class="tage">&lt;p&gt;</code>
+                <code
+                  class="tage">&lt;a&gt; <span class="attr">href=</span><span class="value">"https://janesmith.com/the-planet-earth/"</span></code>
+                Continue reading....
+                <code class="tage">&lt;/a&gt;</code>
+              </p><code class="tage">&lt;/p&gt;</code>
+              <p><code class="tage">&lt;/article&gt;</code></p>
+            </div>
+          </div>
+        </div>
+        <!-- <nav> -->
+        <div class="term">
+          <dl>
+            <dt><strong><code class="tage">&lt;nav&gt;</code> : The Navigation Section element</strong></dt>
+            <dd>The <code class="tage">&lt;nav&gt;</code> represents a section fo page whose purpose is to provide
+              navigation links. either within the current docuemnt or to other documents. Common examples of navigation
+              sections are menus, tables of contents, and indexes.</dd>
+            <strong>Attributes</strong>
+            <dd>This element only includes the <u>global attributes</u>.</dd>
+          </dl>
+          <strong>Note</strong>
+          <ul>
+            <li>It's not neccessary fot all links to be contained in a <code class="tage">&lt;nav&gt;</code> element,
+              <code class="tage">&lt;nav&gt;</code> is intended only for major block of navigation links; typically the
+              <code class="tage">&lt;footer&gt;</code> element often has a list of links that don't need to be in a
+              <code class="tage">&lt;nav&gt;</code> element.
+            </li>
+            <li>A document may have serval <code class="tage">&lt;nav&gt;</code> elements, for example, one for site
+              navigation and one for intra-page navigation <code class="attr">aria-labelledby</code> can be used in such
+              case to promote accessiblilty.</li>
+            <li>User agent, such as screen readers targeting disabled users, can use this element to determine whether
+              to
+              omit the initial rendering of navigation-only content.</li>
+          </ul>
+          <strong>For Example</strong>
+          <div class="for-example">
+            <p>In this example, a <code class="tage">&lt;nav&gt;</code> block is used to contain an unordered list
+              (<code class="tage">&lt;ul&gt;</code>) of links, With appropriate CSS, this can be presented as a sidebar,
+              navigation bar, or drop-down menu.</p>
+            <div class="code">
+              <p><code class="tage">&lt;nav&gt; <span class="attr">class=</span><span class="value">"menu"</span></code>
+              </p>
+              <p><code class="tage">&lt;ul&gt;</code></p>
+              <p><code class="tage">&lt;li&gt;</code><code
+                  class="tage">&lt;a <span class="attr">href=</span><span class="value">"#"</span>&gt;</code>Home<code
+                  class="tage">&lt;/a&gt;</code><code class="tage">&lt;/li&gt;</code></p>
+              <p><code class="tage">&lt;li&gt;</code><code
+                  class="tage">&lt;a <span class="attr">href=</span><span class="value">"#"</span>&gt;</code>About<code
+                  class="tage">&lt;/a&gt;</code><code class="tage">&lt;/li&gt;</code></p>
+              <p><code class="tage">&lt;li&gt;</code><code
+                  class="tage">&lt;a <span class="attr">href=</span><span class="value">"#"</span>&gt;</code>Contact<code
+                  class="tage">&lt;/a&gt;</code><code class="tage">&lt;/li&gt;</code></p>
+              <p><code class="tage">&lt;/ul&gt;</code></p>
+              <p><code class="tage">&lt;/nav&gt;</code></p>
+            </div>
+            <p>The semantic of the <code class="tage">&lt;nav&gt;</code> element is that of providing links, However a
+              <code class="tage">&lt;nav&gt;</code> element doesn't have to contain a list, it can contain other kinds
+              of
+              content as well, In this navigation block, links are provided in prose:
+            </p>
+            <div class="code">
+              <p><code class="tage">&lt;nav&gt;</code></p>
+              <p><code class="tage">&lt;h2&gt;</code>Navigation<code class="tage">&lt;/h2&gt;</code></p>
+              <p>
+                <code class="tage">&lt;p&gt;</code>You are on my home page, To the north lies
+                <code class="tage">&lt;a <span class="attr">href=</span><span class="value">"/blog"</span>&gt;</code>my
+              </p>
+              <p>blog <code class="tage">&lt;/a&gt;</code>, from whence the sounds of battle can be heard. To the east
+              </p>
+              <p>you can see a larg moutain, upon which many <code
+                  class="tage">&lt;a <span class="attr">href=</span><span class="value">"/school"</span>&gt;</code>school
+                papers <code class="tage">&lt;/a&gt;</code></p>
+              <p>are littered. Far up thus mountain you can spy a little figure who appears to be me, desperately
+                scribbling a
+              </p>
+              <p>
+                <code
+                  class="tage">&lt;a <span class="attr">href=</span><span class="value">"/school/thesis"</span>&gt;</code>thesis<code
+                  class="tage">&lt;/a&gt;</code>
+              </p>
+              <p><code class="tage">&lt;/p&gt;</code></p>
+              <p>
+                <code class="tage">&lt;p&gt;</code>To the west are several exits. One fun-looking exit is labeled
+                <code
+                  class="tage">&lt;a <span class="attr">href=</span><span class="value">"https://games.example.com/"</span>&gt;</code>"games"<code
+                  class="tage">&lt;/a&gt;</code>
+              </p>
+              <p>. Another more boring-looking exit is labeled
+                <code
+                  class="tage">&lt;a <span class="attr">href=</span><span class="value">"https://isp.example.net/"</span>&gt;</code>ISP"<code
+                  class="tage">&lt;/a&gt;</code>
+              </p>
+              <code class="tage">&lt;/p&gt;</code>
+              </p>
+              <p>
+                <code class="tage">&lt;p&gt;</code>To the south lies a dark and dank
+                <code class="tage">&lt;a </p><p><span class="attr">href=</span><span
+                class="value">"/about"</span>&gt;</code>contacts page.<code class="tage">&lt;/a&gt;</code>
+                Cobwebs cover its disused entrance, and at one point you
+              </p>
+              <p>see a rat run quickly out of the page.
+                <code class="tage">&lt;/p&gt;</code>
+              </p>
+              <code class="tage">&lt;/nav&gt;</code>
+
+            </div>
+          </div>
+        </div>
+        <!-- <main> -->
+        <div class="term">
+          <dl>
+            <dt><code class="tage">&lt;main&gt;</code></dt>
+            <dd>This <code class="tage">&lt;main&gt;</code> represents the dominant content of the <code
+                class="tage">&lt;body&gt;</code> of a document, The main content area consists of content that is
+              directly
+              related to ro expands upon the central topic of a document, or the central functionality of an
+              application.
+            </dd>
+            <dd>A document mustn't have than one <code class="tage">&lt;main&gt;</code> element that doesn't have the <u
+                class="value">hidden</u> attribute specified.</dd>
+            <strong>Attributes</strong>
+            <dd>This element only includes the <u>global attributes</u>.</dd>
+            <strong>Note</strong>
+            <dd>The content of <code class="tage">&lt;main&gt;</code> element should be unique to the document, Content
+              that is repeated across a set of documents or document sections such as sidebars, navigation link,
+              copyright
+              information, site logos, and search forms shouldn't be included unless the search form is the main
+              function
+              of the page. </dd>
+            <dd><code class="tage">&lt;main&gt;</code> doesn't contribute to the document's outline' that is, unlike
+              elements such as <code class="tage">&lt;body&gt;</code> headings such as <code
+                class="tage">&lt;h2&gt;</code> and such, <code class="tage">&lt;main&gt;</code> doesn't affect the
+              <u>DOM's</u> concept of the structure of the page, it's strictly informative.
+            </dd>
+          </dl>
+          <strong>For Example</strong>
+          <div class="for-example">
+            <div class="code">
+              <p class="comment">&lt;!-- other content --&gt;</p>
+              <p><code class="tage">&lt;main&gt;</code></p>
+              <p><code class="tage">&lt;h1&gt;</code>Apples<code class="tage">&lt;/h1&gt;</code></p>
+              <p><code class="tage">&lt;p&gt;</code>The apple is the pomaceous fruit of the apple tree.<code
+                  class="tage">&lt;/p&gt;</code></p>
+              <p><code class="tage">&lt;article&gt;</code></p>
+              <p><code class="tage">&lt;h2&gt;</code>Red Delicious <code class="tage">&lt;/h2&gt;</code></p>
+              <p><code class="tage">&lt;p&gt;</code>These bright red apples are the most common found in many
+                supermarkers.<code class="tage">&lt;/p&gt;</code></p>
+              <p><code class="tage">&lt;p&gt;</code>....<code class="tage">&lt;/p&gt;</code></p>
+              <p><code class="tage">&lt;p&gt;</code>....<code class="tage">&lt;/p&gt;</code></p>
+              <p><code class="tage">&lt;/article&gt;</code></p>
+              <p><code class="tage">&lt;article&gt;</code></p>
+              <p><code class="tage">&lt;h2&gt;</code>Granny Smith<code class="tage">&lt;/h2&gt;</code></p>
+              <p><code class="tage">&lt;p&gt;</code>These juicy, green apples make a great filling for apple pies.<code
+                  class="tage">&lt;/p&gt;</code></p>
+              <p><code class="tage">&lt;p&gt;</code>....<code class="tage">&lt;/p&gt;</code></p>
+              <p><code class="tage">&lt;p&gt;</code>....<code class="tage">&lt;/p&gt;</code></p>
+              <p><code class="tage">&lt;/article&gt;</code></p>
+              <p><code class="tage">&lt;/main&gt;</code></p>
+            </div>
+          </div>
+          <strong>Accessibility</strong>
+          <p>The <code class="tage">&lt;main&gt;</code> element behaves like a <u>main landmark</u> role,
+            <u>landmark</u> can be used by assistive techonlogy to quickly identify and navigate to large sections of
+            the document, Prefer using the <code class="tage">&lt;main&gt;</code> element over declaring <code
+              class="attr">role="main"</code>, unless there are <u>leagacy browser support concerns</u>.
+          </p>
+          <strong>Skip Navigation</strong>
+          <p>Skip navigation, also known as "skipnav", is a technique that allows an assitive techology user to quickly
+            bypass large section of repeated content (main navigation, info banners, etc..) This lets the user access
+            the main content of the page faster.</p>
+          <p>Adding an <u class="attr">id</u> attribute to <code class="tage">&lt;main&gt;</code> element lets it be a
+            target of skip navigation link.</p>
+          <div class="for-exmaple code">
+            <p><code class="tage">&lt;body&gt;</code></p>
+            <p>
+              <code class="tage">&lt;a&gt;<span class="attr">href=</span>
+                <span class="value">"#main=content"</span></code>Skip
+              to main content<code class="tage">&lt;/a&gt;</code>
+            </p>
+            <p class="comment">&lt;!-- navigation and header content --&lg;</p>
+            <p><code class="tage">&lt;main&gt;</code></p>
+            <p class="comment">&lt;!-- main page content --&gt;</p>
+            <p><code class="tage">&lt;/main&gt;</code></p>
+            <p><code class="tage">&lt;/body&gt;</code></p>
+          </div>
+        </div>
+        <!-- <section> -->
+        <div class="term">
+          <dl>
+            <dt><code class="tage">&lt;section&gt;</code><b>: The Generic Section element</b></dt>
+            <dd>The <code class="tage">&lt;section&gt;</code> represents a generic standalone section of a document,
+              which doesn't have a more specific semantic element to represent it, Section should allways have a
+              heading, with very few exceptions.</dd>
+            <strong>Attributes</strong>
+            <dd>This element only includes the <u>global attributes</u>.</dd>
+          </dl>
+          <strong>Note</strong>
+          <p>As mentioned above, <code class="tage">&lt;section&gt;</code> is a generic sectioning element, and should
+            only be used if there isn't a more specific element to represent it, As example, a navigation menu should be
+            wrapped in a <code class="tage">&lt;nav&gt;</code> element, but a list of search results or a map display
+            and its controls don't have specific elments, and could be put inside a <code
+              class="tage">&lt;section&gt;</code>.</p>
+          <p>Also consider these cases:</p>
+          <ul>
+            <li>If the contents of the element represnet a standalone, atomic unit of content that makes sence
+              syndicated as a standalone piece (e.g a blog post or blog comment, or a newspaper article), the <code
+                class="tage">&lt;article&lg;</code> element would be better choice.</li>
+            <li>If the contents represent useful tangential information that works alongside the main content, but is
+              not directly part of it (like related links, or an author bio), use an <code
+                class="attr">&lt;aside&gt;</code>.</li>
+            <li>If the content represent the main content area of document, use <code class="tage">&lt;main&gt;</code>.
+            </li>
+            <li>If you are only using the element as styling wrapper, use a <code class="tage">&lt;div&gt;</code>, A
+              rule of thumb is that a <code class="tage">&lt;section&gt;</code> should logically appear in the outline
+              of a document.</li>
+          </ul>
+          <p>To reiterate, each <code class="tage">&lt;section&gt;</code> should be identified, typically by including a
+            heading (<code class="tage">&lt;h1&gt;</code> - <code class="tage">&lt;h6&gt;</code> element) as a child of
+            the <code class="tage">&lt;section&gt;</code> element, wherever possiblex, See blow examples of where you
+            might see a <code class="tage">&lt;article&gt;</code> without a heading.</p>
+          <strong>For Example</strong>
+          <div class="for-example">
+            <strong>Before</strong>
+            <div class="code">
+              <p><code class="tage">&lt;div&gt;</code></p>
+              <p><code class="tage">&lt;h2&gt;</code>Heading<code class="tage">&lt;/h2&gt;</code></p>
+              <p><code class="tage">&lt;p&gt;</code>Brunch of awesome content<code class="tage">&lt;p&gt;</code></p>
+              <p><code class="tage">&lt;/div&gt;</code></p>
+            </div>
+            <strong>After</strong>
+            <div class="code">
+              <p><code class="tage">&lt;section&gt;</code></p>
+              <p><code class="tage">&lt;h2&gt;</code>Heading<code class="tage">&lt;/h2&gt;</code></p>
+              <p><code class="tage">&lt;p&gt;</code>Brunch of awesome content<code class="tage">&lt;p&gt;</code></p>
+              <p><code class="tage">&lt;/section&gt;</code></p>
+            </div>
+            <strong class="code">Using a section without a heading</strong>
+            <p>Cricumstances where you might see <code class="tage">&lt;section&gt;</code> used without a heading are
+              typically found in web application/UI sections rather than in traditional document structures, In a
+              document, it doesn't really make any sense to have a separate section of content without a heading to
+              descirbe its contents, Such headings are useful for all readers, but particularly useful for users of
+              assistive techonlogies like screenreaders, and they are also good for <b class="attr">SEO</b>.
+            <p>
+            <p>Consider however a secondary navigation mechaism, If the global navigation is already wrapped in a
+              <code class="tage">&lt;nav&gt;</code> element, you could conceiveably wrap a previous/next menu in a
+              <code class="tage">&lt;section&gt;</code> .
+            </p>
+            <div class="code">
+              <p><code class="tage">&lt;section&gt;</code></p>
+              <p>
+                <code class="tage">&lt;a&gt; <span class="attr">href=</span><span class="value">"#"</span></code>
+                Previous article
+                <code class="tage">&lt;/a&gt;</code>
+              </p>
+              <p>
+                <code class="tage">&lt;a&gt; <span class="attr">href=</span><span class="value">"#"</span></code>
+                Next article
+                <code class="tage">&lt;/a&gt;</code>
+              </p>
+              <p><code class="tage">&lt;/section&gt;</code></p>
+            </div>
+            <p>Or what about some kind of button bar for controlling your app? This might not neccessarily what a
+              heading, but it still a distinct section of the document.</p>
+            <div class="code">
+              <p><code class="tage">&lt;section&gt;</code></p>
+              <p>
+                <code
+                  class="tage">&lt;button&gt; <span class="attr">class=</span><span class="value">"reply"</span></code>
+                Reply
+                <code class="tage">&lt;/button&gt;</code>
+              </p>
+              <p>
+                <code
+                  class="tage">&lt;button&gt; <span class="attr">class=</span><span class="value">"reply-all"</span></code>
+                Reply to all
+                <code class="tage">&lt;/button&gt;</code>
+              </p>
+              <p>
+                <code
+                  class="tage">&lt;button&gt; <span class="attr">class=</span><span class="value">"fwd"</span></code>
+                Forward
+                <code class="tage">&lt;/button&gt;</code>
+              </p>
+              <p>
+                <code
+                  class="tage">&lt;button&gt; <span class="attr">class=</span><span class="value">"del"</span></code>
+                Delete
+                <code class="tage">&lt;/button&gt;</code>
+              </p>
+              <p><code class="tage">&lt;/section&gt;</code></p>
+            </div>
+            <p>Section with no heading do nor appear in the document outline, If you did want force the inclusion of
+              such an HTML block inside the document outline but not affect the visual output in any way, you could
+              include a heading but hide it:</p>
+            <div class="code">
+              <p><code class="tage">&lt;section&gt;</code></p>
+              <p>
+                <code
+                  class="tage">&lt;h2&gt;<span class="attr">class=</span><span class="value">"hidden"</span></code>Controls<code
+                  class="tage">&lt;/h2&gt;</code>
+              </p>
+              <p>
+                <code
+                  class="tage">&lt;button&gt; <span class="attr">class=</span><span class="value">"reply"</span></code>
+                Reply
+                <code class="tage">&lt;/button&gt;</code>
+              </p>
+              <p>
+                <code
+                  class="tage">&lt;button&gt; <span class="attr">class=</span><span class="value">"reply-all"</span></code>
+                Reply to all
+                <code class="tage">&lt;/button&gt;</code>
+              </p>
+              <p>
+                <code
+                  class="tage">&lt;button&gt; <span class="attr">class=</span><span class="value">"fwd"</span></code>
+                Forward
+                <code class="tage">&lt;/button&gt;</code>
+              </p>
+              <p>
+                <code
+                  class="tage">&lt;button&gt; <span class="attr">class=</span><span class="value">"del"</span></code>
+                Delete
+                <code class="tage">&lt;/button&gt;</code>
+              </p>
+              <p><code class="tage">&lt;/section&gt;</code></p>
+            </div>
+            <p>Make sure to use some assistive techonlogy and screenreaders-friendly CSS to hide it, like so:</p>
+            <div class="code">
+              <p><code class="attr">.hidden</code> <code class="tage">{</code></p>
+              <p><code class="tage">position: <b class="value">absolute</b>;</code></p>
+              <p><code class="tage">top: <b class="value">-9999px</b>;</code></p>
+              <p><code class="tage">left: <b class="value">-9999px</b>;</code></p>
+              <p><code class="tage">}</code></p>
+            </div>
+            <p>Depending on the content, including a heading could also be good for SEO, so it is an option to consider.
+            </p>
+          </div>
+        </div>
+        <!-- <aside> -->
+        <div class="term">
+          <dl>
+            <dt><b><code class="tage">&lt;aside&gt;</code> : The Aside element</b></dt>
+            <dd>The <code class="tage">&lt;aside&gt;</code> represents a portion of a document whose content is only
+              indirectly related to the document's main content, Aside are frequently presented as sidebars or call-out
+              boxes.</dd>
+            <strong>Attributes</strong>
+            <dd>This element only includes the <u>global attributes</u>.</dd>
+          </dl>
+          <strong>Note</strong>
+          <ul>
+            <li>Do not use the <code class="tage">&lt;aside&gt;</code> element to tage parenthesized text, as this kind
+              of text is considerd part of the main flow.</li>
+          </ul>
+          <strong>For Example</strong>
+          <div class="code">Using <code class="tage">&lt;aside&gt;</code></div>
+          <p>This example uses <code class="tage">&lt;aside&gt;</code> to mark up a paragraph in an article, The
+            paragraph is only indirectly related to the main article content.</p>
+          <div class="for-example code">
+            <p><code class="tage">&lt;article&gt;</code></p>
+            <p><code class="tage">&lt;p&gt;</code></p>
+            <p>The Diney movie <code class="tage">&lt;cite&gt;</code>The Littel Mermaid <code
+                class="tage">&lt;cite&gt;</code> was</p>
+            <p>first relased to theatres in 1989.</p>
+            <p><code class="tage">&lt;/p&gt;</code></p>
+            <p><code class="tage">&lt;aside&gt;</code></p>
+            <p><code class="tage">&lt;p&gt;</code></p>
+            <p>The movie earned $87 million during its initial release.</p>
+            <p><code class="tage">&lt;/p&gt;</code></p>
+            <p><code class="tage">&lt;/aside&gt;</code></p>
+            <p><code class="tage">&lt;p&gt;</code></p>
+            <p> More info about the movie...</p>
+            <p><code class="tage">&lt;/p&gt;</code></p>
+            <p><code class="tage">&lt;/article&gt;</code></p>
+          </div>
+        </div>
+        <!-- <article> -->
+        <div class="term">
+          <dl>
+            <dt><code class="tage">&lt;article&gt;</code></dt>
+            <dd>The <code class="tage">&lt;article&gt;</code> represents a self-contained compositon in a document,
+              page, application, or site which is indended to be independently distributable or reusable(e.g, in
+              syndication), Examples include: a forum post, a magazine or newspaper article, or a blog entry, a product
+              card, user-submitted comment, an interactive widget or gadget, or any other independant item of content.
+            </dd>
+            <dd>A given document can have multiple articles in it, for example, on a blog that shows the text of each
+              article on after another as the reader scrolls, each post would be contained in an <code
+                class="tage">&lt;article&gt;</code> .</dd>
+            <strong>Attributes</strong>
+            <dd>This element only includes the <u>global attributes</u>.</dd>
+          </dl>
+          <strong>Note</strong>
+          <ul>
+            <li></li>
+          </ul>
+          <div class="for-example">
+
+          </div>
+        </div>
+        <!-- <details> -->
+        <div class="term">
+          <dl>
+            <dt><code class="tage">&lt;details&gt;</code></dt>
+          </dl>
+          <div class="for-example">
+
+          </div>
+        </div>
+        <!-- <figcaption> -->
+        <div class="term">
+          <dl>
+            <dt><code class="tage">&lt;figcaption&gt;</code></dt>
+          </dl>
+          <div class="for-example">
+
+          </div>
+        </div>
+        <!-- <figure> -->
+        <div class="term">
+          <dl>
+            <dt><code class="tage">&lt;figure&gt;</code></dt>
+          </dl>
+          <div class="for-example">
+
+          </div>
+        </div>
+        <!-- <summary> -->
+        <div class="term">
+          <dl>
+            <dt><code class="tage">&lt;summary&gt;</code></dt>
+          </dl>
+          <div class="for-example">
+
+          </div>
+        </div>
+        <!-- <time> -->
+        <div class="term">
+          <dl>
+            <dt><code class="tage">&lt;time&gt;</code></dt>
+          </dl>
+          <div class="for-example">
+
+          </div>
+        </div>
+        <!-- <footer> -->
+        <div class="term">
+          <dl>
+            <dt><code class="tage">&lt;footer&gt;</code></dt>
+          </dl>
+          <div class="for-example">
+
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>

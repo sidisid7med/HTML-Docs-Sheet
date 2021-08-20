@@ -1,0 +1,184 @@
+:root {
+  --color-heading: rgb(228, 77, 38);
+  --color-secondary: rgb(66, 165, 245);
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial,
+    sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen {
+  body {
+    margin: 2em auto;
+    max-width: 1000px;
+    color: currentColor;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  background: transparent;
+  display: block;
+  width: 100%;
+  height: 1px;
+  visibility: visible;
+  border: none;
+  border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+@page {
+  margin: 1in;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgba(55, 53, 47, 0.09);
+  border-collapse: collapse;
+}
+
+table {
+  border-left: none;
+  border-right: none;
+}
+
+th,
+td {
+  font-weight: normal;
+  padding: 0.25em 0.5em;
+  line-height: 1.5;
+  min-height: 1.5em;
+  text-align: left;
+}
+
+th {
+  color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+  margin: 0;
+  margin-block-start: 0.6em;
+  margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+  margin-block-start: 0.6em;
+}
+
+ul > li {
+  list-style: disc;
+}
+
+ul.to-do-list {
+  text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+  list-style: none;
+}
+
+.to-do-children-checked {
+  text-decoration: line-through;
+  opacity: 0.375;
+}
+
+ul.toggle > li {
+  list-style: none;
+}
+
+ul {
+  padding-inline-start: 1.7em;
+}
+
+ul > li {
+  padding-left: 0.1em;
+}
+
+ol {
+  padding-inline-start: 1.6em;
+}
+
+ol > li {
+  padding-left: 0.2em;
+}
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+a,
+a.visited {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.code,
+code {
+  background: rgb(135 131 120 / 6%);
+  border-radius: 3px;
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+  font-size: 85%;
+  box-shadow: rgb(135 131 120 / 12%) 1px 2px 20px -7px;
+  tab-size: 2;
+}
+
+.code {
+  padding: 0.8em 1em;
+}
+
+.code strong {
+  color: var(--color-secondary);
+}
+
+.code > code {
+  background: none;
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+}
+
+code.tage {
+  font-weight: 500;
+  color: var(--color-heading);
+}
+
+.attr {
+  font-weight: 500;
+  color: #ffbf7a;
+}
+
+.value {
+  font-weight: 500;
+  color: #6af699;
+}
+.comment {
+  font-style: italic;
+  font-weight: 700;
+  color: rgb(116 116 116);
+}
+
+blockquote {
+  font-size: 1.25em;
+  margin: 1em 0;
+  padding-left: 1em;
+  border-left: 3px solid rgb(55, 53, 47);
+}
+
+.heading {
+  color: var(--color-heading);
+  font-weight: 500;
+}
