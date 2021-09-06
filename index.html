@@ -91,7 +91,7 @@ without doctype page represent as 'Quirks Mode' -->
   sizes, 
   title
   ] -->
-  <link rel="stylesheet" href="index.css" title="css index">
+  <link rel="stylesheet" href="css/index.css" title="css index">
   <link rel="icon" href="embed/html.svg">
   <!-- <link rel="author" href="author.md"> -->
   <!-- base tag specifies the base URL and/or target for all relative URLs in a document,
@@ -416,11 +416,9 @@ without doctype page represent as 'Quirks Mode' -->
         <dl>
           <dt><code class="tage">&lt;b&gt;</code></dt>
           <dd>The bring attention to element is used to draw the render's attention to the element's contents,
-            which
-            are not otherwise granted special importance. this was formerly known as Boldface element, and most
+            which are not otherwise granted special importance. this was formerly known as Boldface element, and most
             browsers still draw the text in boldface, however you should nor use <code class="tage">&lt;b&gt;</code> for
-            styling
-            text instead you should use CSS font-weight property to create boldface text or the
+            styling text instead you should use CSS font-weight property to create boldface text or the
             <code class="tage">&lt;strong&gt;</code>
             element indicate that text is of special importance.
           </dd>
@@ -1316,13 +1314,14 @@ without doctype page represent as 'Quirks Mode' -->
     <hr>
     <div class="content">
       <div class="docs">
-        <p>All HTML Semantic tags <code class="tage">&lt;header&gt;</code>, <code class="tage">&lt;nav&gt;</code>, <code
-            class="tage">&lt;main&gt;</code>, <code class="tage">&lt;section&gt;</code>, <code
-            class="tage">&lt;aside&gt;</code>, <code class="tage">&lt;article&gt;</code>, <code
-            class="tage">&lt;details&gt;</code>, <code class="tage">&lt;figcaption&gt;</code>, <code
-            class="tage">&lt;figure&gt;</code>, <code class="tage">&lt;summary&gt;</code>, <code
-            class="tage">&lt;time&gt;</code>, <code class="tage">&lt;mark&gt;</code>, <code
-            class="tage">&lt;footer&gt;</code></p>
+        <p>All HTML Semantic tags <code class="tage">&lt;header&gt;</code>, <code class="tage">&lt;nav&gt;</code>,
+          <code class="tage">&lt;main&gt;</code>, <code class="tage">&lt;section&gt;</code>,
+          <code class="tage">&lt;aside&gt;</code>, <code class="tage">&lt;article&gt;</code>,
+          <code class="tage">&lt;details&gt;</code>, <code class="tage">&lt;figcaption&gt;</code>,
+          <code class="tage">&lt;figure&gt;</code>, <code class="tage">&lt;summary&gt;</code>,
+          <code class="tage">&lt;time&gt;</code>, <code class="tage">&lt;mark&gt;</code>,
+          <code class="tage">&lt;footer&gt;</code>
+        </p>
 
         <!-- <header> -->
         <div class="term">
@@ -1849,12 +1848,11 @@ without doctype page represent as 'Quirks Mode' -->
 
           </div>
         </div>
-
         <!-- <figcaption> & <figure> -->
         <div class="term">
           <!-- <figure> -->
           <dl>
-            <dt><code class="tage">&lt;figure&gt;</code></dt>
+            <dt><b><code class="tage">&lt;figure&gt;</code> : The Figure element</b></dt>
             <dd>The <code class="tage">&lt;figure&gt;</code> represents self-contained content, potentially with an
               optional caption, which is specified using the <code class="tage">&lt;figcaption&gt;</code> element, The
               figure, its caption, and its contents are referenced as single unit.</dd>
@@ -1883,44 +1881,351 @@ without doctype page represent as 'Quirks Mode' -->
             <dd>This element only includes the <u>global attributes</u>.</dd>
           </dl>
 
-          <div class="for-example">
-
+          <div class="for-example code">
+            <p><code class="tage">&lt;figure&gt;</code></p>
+            <p><code class="tage">&lt;figcaption&gt;&lt;cite&gt;</code>Edsger Dijkstra: <code
+                class="tage">&lt;cite&gt;&lt;figcaption&gt;</code></p>
+            <p><code class="tage">&lt;blockquote&gt;</code>If debugging is the process of removing software bugs,</p>
+            <p> then programming must be the process of putting them in. <code class="tage">&lt;/blockquote&gt;</code>
+            </p>
+            <p><code class="tage">&lt;/figure&gt;</code></p>
           </div>
         </div>
-
         <!-- <summary> -->
         <div class="term">
           <dl>
-            <dt><code class="tage">&lt;summary&gt;</code></dt>
+            <dt><code class="tage">&lt;summary&gt;</code><b> : The Disclouser Summary element</b></dt>
+            <dd>The HTML Discouser Summary element (<code class="tage">summary</code>) element specifies a summary,
+              caption, or legend for <u>&lt;details&gt;</u> element's disclouser box, Clicking the
+              <u>&lt;summary&gt;</u> element toggles the state of the parent <u>&lt;details&gt;</u> element open and
+              closed.
+            </dd>
+            <strong>Attributes</strong>
+            <dd>This element only includes the <u>global attributes</u>.</dd>
           </dl>
+          <strong>Notes</strong>
+          <ul>
+            <li>The <code class="tage">&lt;summary&gt;</code> element's contents can be any heading content, plain text,
+              or HTML that can be used within a paragraph.</li>
+            <li>A <code class="tage">&lt;summary&gt;</code> element may only be used as the first child of a <code
+                class="tage">&lt;details&gt;</code> element. When the user clicks on the summary, the parent <code
+                class="tage">&lt;details&gt;</code> element is toggled open or closed, and then a <u>toggle</u> event is
+              sent to the <code class="tage">&lt;details&gt;</code> element, which can be used to let you know when this
+              state change occurs.</li>
+            <p class="code"><b>Default label text</b></p>
+            <li>If a <code class="tage">&lt;details&gt;</code> element's first child is not a <code
+                class="tage">&lt;summary&gt;</code> element, the <u>user-agent</u> will use a default string (typicall
+              "Details") as the label for the disclouser box.</li>
+            <p class="code">Default style</p>
+            <li>Per the HTML specification, the default style for <code class="tage">&lt;summary&gt;</code> elements
+              includes <span class="code">dispaly: list-item;</span>,This makes it possible to change or remove the icon
+              dispayed as the disclouser widget next to the label form the default, which is typically a triangle.</li>
+            <li>You can also change the style to <span class="code">dispaly: block;</span> to remove the disclouser
+              triangle.</li>
+            <li></li>
+          </ul>
           <div class="for-example">
-
+            <div class="code">
+              <p><code class="tage">&lt;details <span class="attr">open</span>&gt;</code></p>
+              <p><code class="tage">&lt;summary&gt;</code></p>
+              <p><code class="tage">&lt;h4&gt;</code>Overview <code class="tage">&lt;h4&gt;</code></p>
+              <p><code class="tage">&lt;/summary&gt;</code></p>
+              <p><code class="tage">&lt;ol&gt;</code></p>
+              <p><code class="tage">&lt;li&gt;</code>Cash on hand: $500.00<code class="tage">&lt;li&gt;</code></p>
+              <p><code class="tage">&lt;li&gt;</code>Current invoice: $75.30<code class="tage">&lt;li&gt;</code></p>
+              <p><code class="tage">&lt;li&gt;</code>Due date: 5/6/19<code class="tage">&lt;li&gt;</code></p>
+              <p><code class="tage">&lt;/ol&gt;</code></p>
+              <p><code class="tage">&lt;/details&gt;</code></p>
+            </div>
+            <br>
+            <div class="code">Warning: Because the <code class="tage">&lt;summary&gt;</code> element has a default role
+              of button (which strips all roles from child elements), this example will not work for users of assistive
+              techonlogies such as screen readers <code class="tage">&lt;h4&gt;</code> will have its role removed and
+              thus not be treaded as a heading for these users. </div>
           </div>
         </div>
         <!-- <time> -->
         <div class="term">
           <dl>
             <dt><code class="tage">&lt;time&gt;</code></dt>
+            <dd>The HTML <code class="tage">&lt;time&gt;</code> represents a specific period in time, It may includes
+              the <code class="tage">&lt;datetime&gt;</code> attibute to translate dates into machine-readable format,
+              allowing for better search engine results or custom features such as reminders. </dd>
+            <dd>
+              <p>It may represent one of the following:</p>
+              <ul>
+                <li>A time on a 24-hour clock</li>
+                <li>A precise date in the <u>Gregorian calendar</u>(with optional time and timezone information).</li>
+                <li>A <u>valid time duration</u>.</li>
+              </ul>
+            </dd>
+
+          </dl>
+          <strong>Attributes</strong>
+          <p>Like all other HTML elements, this element supports the <u>global attributes</u>.</p>
+          <dl>
+            <dt><b class="attr">datetime</b></dt>
+            <dd>This attribute indicates the time and/or date of the element and must be in one of the formats described
+              below.</dd>
+          </dl>
+          <strong>Notes</strong>
+          <ul>
+            <li>This element is for presenting dates and times in a machine readable format, For example this can help
+              user agent offer to add an event to a user's calendar.</li>
+            <li>This element should not be used for dates prior to the introduction of the Gregorian calendar (due to
+              complications is calculating those dates.</li>
+            <li>This <u>datetime value</u> (this machine-readable value of the element's <code
+                class="tage">datetime</code> attribute, whcih must be in the proper format, If the element does not have
+              a <code class="tage">datetime</code> attribute, It must not have any element descendants, and the
+              <u>datetime value</u> is the element's child text element.
+            </li>
+          </ul>
+          <p class="code">Valid datetime Values</p>
+          <dl>
+            <dt>a valid year string</dt>
+            <dd>2011</dd>
+            <dt>a valid month string</dt>
+            <dd>2011-11</dd>
+            <dt>a valid date string</dt>
+            <dd>2011-11-18</dd>
+            <dt>a valid week string</dt>
+            <dd>2011-W47</dd>
+            <dt>a valid time string</dt>
+            <dd>13:43</dd>
+            <dd>13:43:34</dd>
+            <dd>13:43:34.223</dd>
+            <dt>a valid local date and time string</dt>
+            <dd>2011-11-18T14:54:39.929</dd>
+            <dt>a valid global date and time string</dt>
+            <dd>2011-11-18T14:54:39.929-0400</dd>
           </dl>
           <div class="for-example">
-
+            <div class="code">
+              <p><code class="tage">&lt;p&gt;</code>The concert took place on</p>
+              <p><code
+                  class="tage">&lt;time <span class="attr">datetime="<span class="value">2018-07-07T20:00:00</span>"</span>&gt;</code>
+                20:00 <code class="tage">&lt;/time&gt;</code></p>
+              <p> <code class="tage">&lt;/p&gt;</code></p>
+            </div>
           </div>
         </div>
         <!-- <footer> -->
         <div class="term">
           <dl>
             <dt><code class="tage">&lt;footer&gt;</code></dt>
+            <dd>The <code class="tage">&lt;footer&gt;</code> represents a footer for its nearest <u>sectioning
+                content</u>, or <u>sectioning root</u>, element, A <code class="tage">&lt;footer&gt;</code> typically
+              contains inforamtion about the author of the section, copyright data or links to related documents.</dd>
+            <dt><strong>Attributes</strong></dt>
+            <dd>This element includes the <u>global attributes</u>.</dd>
           </dl>
+          <strong>Notes</strong>
+          <ul>
+            <li>Ecloser inforamtion about the author in an <u>&lt;address&gt;</u> element that can be included into the
+              <code class="tage">&lt;footer&gt;</code>
+            </li>
+            <li>The <code class="tage">&lt;footer&gt;</code> element is not sectioning content and therefore doesnt't
+              introduce a new section in the <u>outline</u>.</li>
+          </ul>
           <div class="for-example">
-
+            <div class="code">
+              <p><code class="tage">&lt;footer&gt;</code></p>
+              <p>Some copyright info or perhaps some author</p>
+              <p>info for an <code class="tage">&lt;article&gt;</code>?</p>
+              <p>info for an <code class="tage">&lt;address&gt;</code>?</p>
+              <p><code class="tage">&lt;footer&gt;</code></p>
+            </div>
           </div>
         </div>
 
+        <strong>Semantic Layouts</strong>
+        <p>This picture below explains how you can use HTML semantic layout on the web page, this HTML semantic element
+          is organized by HTML semantic logic.</p>
+        <img src="embed/Semantic-Logic.jpg" alt="Semantic Layouts">
+      </div>
+      <div class="for-example">
+        <p>This example use semantic class for unsemantic element, layout with div and classes.</p>
+        <div class="code">
+          <p><span class="tage">&lt;div <span class="attr">class="<span class="value">header</span>"</span>&gt;</span>
+          </p>
+          <p><span class="tage">&lt;div <span class="attr">class="<span class="value">nav</span>"</span>&gt;</span></p>
+          <p><span class="tage">&lt;a <span class="attr">href="<span
+                  class="value">link-1</span>"</span>&gt;</span>link-1<span class="tage">&lt;/a&gt;</span></p>
+          <p><span class="tage">&lt;a <span class="attr">href="<span
+                  class="value">link-2</span>"</span>&gt;</span>link-2<span class="tage">&lt;/a&gt;</span></p>
+          <p><span class="tage">&lt;a <span class="attr">href="<span
+                  class="value">link-3</span>"</span>&gt;</span>link-3<span class="tage">&lt;/a&gt;</span></p>
+          <p><span class="tage">&lt;/div&gt;</span></p>
+          <p><span class="tage">&lt;/div&gt;</span></p>
+          <p><span class="tage">&lt;div <span class="attr">class="<span class="value">main</span>"</span>&gt;</span></p>
+          <p><span class="tage">&lt;div <span class="attr">class="<span class="value">nav</span>"</span>&gt;</span></p>
+          <p><span class="tage">&lt;a <span class="attr">href="<span
+                  class="value">link-1</span>"</span>&gt;</span>link-1<span class="tage">&lt;/a&gt;</span></p>
+          <p><span class="tage">&lt;a <span class="attr">href="<span
+                  class="value">link-2</span>"</span>&gt;</span>link-2<span class="tage">&lt;/a&gt;</span></p>
+          <p><span class="tage">&lt;/div&gt;</span></p>
+          <p><span class="tage">&lt;div <span class="attr">class="<span class="value">section</span>"</span>&gt;</span>
+          </p>
+          <p><span class="tage">&lt;div <span class="attr">class="<span class="value">article</span>"</span>&gt;</span>
+          </p>
+          <p><span class="tage">&lt;h3&gt;</span>Heading Level 3<span class="tage">&lt;/h3&gt;</span></p>
+          <p><span class="tage">&lt;p&gt;</span>Article Paragraph<span class="tage">&lt;/p&gt;</span></p>
+          <p><span class="tage">&lt;div <span class="attr">class="<span class="value">figure</span>"</span>&gt;</span>
+          </p>
+          <p><span class="tage">&lt;div <span class="attr">class="<span
+                  class="value">figcaption</span>"</span>&gt;</span></p>
+          <p><span class="tage">&lt;h4&gt;</span>Heading Level 4<span class="tage">&lt;/h4&gt;</span></p>
+          <p><span class="tage">&lt;/div&gt;</span></p>
+          <p><span class="tage">&lt;img <span class="attr">src="<span class="value">img</span>" <span
+                  class="attr">alt="<span class="value">Figure Image</span>" &gt;</span></p>
+          <p><span class="tage">&lt;/div&gt;</span></p>
+          <p><span class="tage">&lt;/div&gt;</span></p>
+          <p><span class="tage">&lt;/div&gt;</span></p>
+          <p><span class="tage">&lt;div <span class="attr">class="<span class="value">aside</span>"</span>&gt;</span>
+          </p>
+          <p><span class="tage">&lt;h1&gt;</span>Heading Level 1<span class="tage">&lt;/h1&gt;</span></p>
+          <p><span class="tage">&lt;p&gt;</span>Aside Paragraph<span class="tage">&lt;/p&gt;</span></p>
+          <p><span class="tage">&lt;/div&gt;</span></p>
+          <p><span class="tage">&lt;/div&gt;</span></p>
+          <p><span class="tage">&lt;div <span class="attr">class="<span class="value">footer</span>"</span>&gt;</span>
+          </p>
+          <p><span class="tage">&lt;div <span class="attr">class="<span class="value">figure</span>"</span>&gt;</span>
+          </p>
+          <p><span class="tage">&lt;div <span class="attr">class="<span
+                  class="value">figcaption</span>"</span>&gt;</span></p>
+          <p><span class="tage">&lt;h3&gt;</span>Heading Level 3<span class="tage">&lt;/h3&gt;</span></p>
+          <p><span class="tage">&lt;/div&gt;</span></p>
+          <p><span class="tage">&lt;p&gt;</span>Figure Paragraph<span class="tage">&lt;/p&gt;</span></p>
+          <p><span class="tage">&lt;/div&gt;</span></p>
+          <p><span class="tage">&lt;/div&gt;</span></p>
 
+        </div>
+        <p>This example use element by semantic logic.</p>
+        <div class="code">
+          <p><span class="tage">&lt;header&gt;</span></p>
+          <p><span class="tage">&lt;nav&gt;</span></p>
+          <p><span class="tage">&lt;a <span class="attr">href="<span
+                  class="value">link-1</span>"</span>&gt;</span>link-1<span class="tage">&lt;/a&gt;</span></p>
+          <p><span class="tage">&lt;a <span class="attr">href="<span
+                  class="value">link-2</span>"</span>&gt;</span>link-2<span class="tage">&lt;/a&gt;</span></p>
+          <p><span class="tage">&lt;a <span class="attr">href="<span
+                  class="value">link-3</span>"</span>&gt;</span>link-3<span class="tage">&lt;/a&gt;</span></p>
+          <p><span class="tage">&lt;/nav&gt;</span></p>
+          <p><span class="tage">&lt;/header&gt;</span></p>
+
+          <p><span class="tage">&lt;main&gt;</span></p>
+          <p><span class="tage">&lt;nav&gt;</span></p>
+          <p><span class="tage">&lt;a <span class="attr">href="<span
+                  class="value">link-1</span>"</span>&gt;</span>link-1<span class="tage">&lt;/a&gt;</span></p>
+          <p><span class="tage">&lt;a <span class="attr">href="<span
+                  class="value">link-2</span>"</span>&gt;</span>link-2<span class="tage">&lt;/a&gt;</span></p>
+          <p><span class="tage">&lt;/nav&gt;</span></p>
+
+          <p><span class="tage">&lt;section&gt;</span></p>
+          <p><span class="tage">&lt;article&gt;</span></p>
+          <p><span class="tage">&lt;h3&gt;</span>Heading Level 3<span class="tage">&lt;/h3&gt;</span></p>
+          <p><span class="tage">&lt;p&gt;</span>Article Paragraph<span class="tage">&lt;/p&gt;</span></p>
+          <p><span class="tage">&lt;figure&gt;</span></p>
+          <p><span class="tage">&lt;figcaption&gt;</span></p>
+          <p><span class="tage">&lt;h4&gt;</span>Heading Level 4<span class="tage">&lt;/h4&gt;</span></p>
+          <p><span class="tage">&lt;/figcaption&gt;</span></p>
+          <p><span class="tage">&lt;img <span class="attr">src="<span class="value">img</span>" <span
+                  class="attr">alt="<span class="value">Figure Image</span>" &gt;</span></p>
+          <p><span class="tage">&lt;/figure&gt;</span></p>
+          <p><span class="tage">&lt;/article&gt;</span></p>
+          <p><span class="tage">&lt;/section&gt;</span></p>
+
+          <p><span class="tage">&lt;aside&gt;</span></p>
+          <p><span class="tage">&lt;h1&gt;</span>Heading Level 1<span class="tage">&lt;/h1&gt;</span></p>
+          <p><span class="tage">&lt;p&gt;</span>Aside Paragraph<span class="tage">&lt;/p&gt;</span></p>
+          <p><span class="tage">&lt;/aside&gt;</span></p>
+          <p><span class="tage">&lt;/main&gt;</span></p>
+
+          <p><span class="tage">&lt;footer&gt;</span></p>
+          <p><span class="tage">&lt;figure&gt;</span></p>
+          <p><span class="tage">&lt;figcaption&gt;</span></p>
+          <p><span class="tage">&lt;h3&gt;</span>Heading Level 3<span class="tage">&lt;/h3&gt;</span></p>
+          <p><span class="tage">&lt;/figcaption&gt;</span></p>
+          <p><span class="tage">&lt;p&gt;</span>Figure Paragraph<span class="tage">&lt;/p&gt;</span></p>
+          <p><span class="tage">&lt;/figure&gt;</span></p>
+          <p><span class="tage">&lt;/footer&gt;</span></p>
+
+        </div>
       </div>
 
     </div>
+    <!-- Media Tags -->
+    <h3 class="heading">Media Tage</h3>
+    <hr>
+    <div class="content">
+      <div class="docs">
+        <!-- <audio> -->
+        <dl>
+          <dt><span class="tage">&lt;audio&gt;</span><b> : The Embed Audio element</b></dt>
+          <dd>The <span class="tage">&lt;audio&gt;</span> is used to embed sound content in documents, Its may contain
+            one or more audio sources, represented using the <i class="attr">src</i> attribute or the <i
+              class="tage">&lt;source&gt;</i> element, the browsers will choose the most suitabel one, It can also be
+            the destination of streamed media, using a <small class="value">MediaStream</small>.</dd>
+          <dd>The content inside the opening and closing <span class="tage">&lt;audio&gt;,&lt;/audio&gt;</span> tage is
+            shown as a fallback in browsers that don't support the element.</dd>
+        </dl>
+        <strong>Attributes</strong>
+        <p>This element's attributes include the <u>global attributes</u>.</p>
+        <dl>
+          <dt><span class="attr">autoplay</span></dt>
+          <dd>A boolean attribute: If specified, the audio will automatically begin playback as soon as it can do so,
+            without waiting for the entire audio file to finish downloading.</dd>
+          <dt><span class="attr">controls</span></dt>
+          <dd>If this attribute is present, the browser will offer controls to allow the user to control audio playback,
+            including volume, seeking, and pause/resume playback.
+          </dd>
+          <dt><span class="attr">currentTime</span></dt>
+          <dd>Reading <span class="attr">currentTime</span> returns a double-precision floating-point value indicating
+            the current playback position, in seconds, of the audio, If the audio's metadata isn't available yet ---
+            thereby preventinf you from knowing the media's start time or duration --- <span
+              class="attr">currentTime</span> instead indicates, and can be used to change, the time at which playback
+            will begin, Otherwise, setting <span class="attr">currentTime</span> sets the current playback position to
+            the given time and seeks the media to the position if the media is currently loaded.</dd>
+          <dd>If the audio is being streamed, it's possible that the <b class="attr">user agent</b> may not be able to
+            obtain some parts of the resource if that data has expired from the media buffer, Other audio may have a
+            media timeline that doesn't start at 0 seconds, so setting <span class="attr">currentTime</span> to a time
+            before that would fail, for example if the audio's media timeline starts at 12 hours, setting <span
+              class="attr">currentTime</span> to 3600 would be an attempt set the cureent playback position well before
+            the begining of the media, and would fail, The <small>getStartDate()</small> method can be used to determine
+            the begining point of the media timeline's reference frame.</dd>
+          <dt><span class="attr">duration</span> Read only</dt>
+          <dd>A double-precision floating-point value which indicates the duration (total length) of audio in seconds,
+            on the media's timeline, If no media is present on the element, or the media is not valid, the returend
+            value is <small>NaN</small>, If the media has no known end (such as for live streams of unknown duration,
+            web radio, media incoming form <b>WebRTC</b>, and so forth), this value is + <small>Infinty</small>.</dd>
+          <dt><span class="attr">loop</span></dt>
+          <dd>A Boolean attribute; if specified, the audio player will automatically seek back to the start upon
+            reaching the end of the audio.</dd>
+          <dt><span class="attr">muted</span></dt>
+          <dd>A Boolean attribute that indicates whether the audio will be initialy silenced, Its default value is
+            <small>false</small>
+          </dd>
+          <dt><span class="attr">preload</span></dt>
+          <dd>This enumerated attribute is intended to provide a hint to the brower about what the author thinks will
+            lead to the best user experience, It may have one of the following values:</dd>
+          <ul>
+            <li><span class="attr">none</span> : Indicate that the audio should not be preload.</li>
+            <li><span class="attr">metadata</span> : Indiacte that only audio metadata (e.g. length) is fetched</li>
+            <li><span class="attr">auto</span> : Indicate that the whole audio file can be downloaded, even if the user
+              is not expected to use it.</li>
+            <li><i>empty string;</i> A synonym of the <span class="attr">auto</span> value.</li>
+          </ul>
+          <p>The default value is different for each browser, The spec advises it to be set to <span
+              class="attr">metadata</span></p>
+          <dt><span class="attr">src</span></dt>
+          <dd>The URL of the audio to embed, This is subject to <i>HTTP access controls</i>, This is optional; you may
+            instead use the <i>&lt;source&gt;</i> element within the audio block to specify the audio to embed.</dd>
+        </dl>
 
+        <!-- <video> -->
+      </div>
+      <div class="for-example"></div>
+    </div>
   </div>
 </body>
 

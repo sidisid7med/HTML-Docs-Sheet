@@ -151,7 +151,7 @@ code {
   color: inherit;
 }
 
-code.tage {
+code.tage, span.tage {
   font-weight: 500;
   color: var(--color-heading);
 }
@@ -163,7 +163,7 @@ code.tage {
 
 .value {
   font-weight: 500;
-  color: #6af699;
+  color: #a2e57b;
 }
 .comment {
   font-style: italic;

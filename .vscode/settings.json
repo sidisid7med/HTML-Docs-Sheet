@@ -1,3 +1,6 @@
 {
-    "editor.fontSize": 20
+  "editor.fontSize": 16,
+  // "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "monolisa",
+  "editor.fontLigatures": true
 }
